@@ -1,0 +1,32 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@keyframes animation {
+  from {
+    letter-spacing: 32px;
+  }
+  to {
+    letter-spacing: 0;
+  }
+}
+
+.animated {
+  animation: animation 5s ease infinite;
+}
+
+h2 {
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.all {
+	width: 100%;
+}
+
+.cont {
+	width: 1000px;
+	margin: 0px auto;
+}
