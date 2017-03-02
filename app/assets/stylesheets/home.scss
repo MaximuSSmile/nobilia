@@ -14,10 +14,11 @@
 }
 
 .animated {
-  animation: animation 5s ease infinite;
+  animation: animation 10s ease infinite;
 }
 
 h2 {
+	text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -27,6 +28,6 @@ h2 {
 }
 
 .cont {
-	width: 1000px;
+	width: 950px;
 	margin: 0px auto;
 }
