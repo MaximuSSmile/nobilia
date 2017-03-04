@@ -3,6 +3,119 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.body {
+  background-color: #383838;
+  margin: 0;
+      font-family: "Helvetica Neue", "Arial", "sans-serif";
+    font-size: none;
+    line-height: none;
+    color: #fff;
+    
+}
+
+
+.navigation {
+  background-color: transparent;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0px;
+  width: 100% ;
+  min-width: 641px;
+  height: 76px;
+      padding: 20px 0;
+
+}
+
+.navlink {
+  display: inline-block;
+  float: right;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1em;
+    color: #fff;
+    padding: .75em 1em;
+    transition: color .1s 0s ease-in-out;
+    margin: auto 10px;
+}
+
+.navlink :hover {
+        color: #9c9999;
+        text-decoration: none;
+}
+
+.navlink > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a.active {
+        color: #9c9999;
+}
+
+.navlink :active {
+        color: #9c9999;
+}
+
+#kitchennav{
+    display: inline-block;
+  float: right;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1em;
+    color: #fff;
+    padding: 0px;
+    transition: color .1s 0s ease-in-out;
+        margin-top: 5px;
+}
+
+#kitchennav > .btn-default {
+  font-family: "Helvetica Neue","Arial","sans-serif";
+       font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0px;
+  padding-left: 10px;
+
+
+}
+
+
+
+#mobilenav{
+  position: fixed;
+  right: 5px;
+    display: none;
+      float: right;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1em;
+    color: #fff;
+    padding: 0px;
+    transition: color .1s 0s ease-in-out;
+    margin-right: 25px;
+}
 
 @keyframes animation {
   from {
@@ -30,4 +143,13 @@ h2 {
 .cont {
 	width: 950px;
 	margin: 0px auto;
+}
+
+@media screen and (max-width: 640px) {
+  .navlink {
+    display: none;
+  }
+  #mobilenav {
+    display: block;
+  }
 }

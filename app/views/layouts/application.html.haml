@@ -1,0 +1,88 @@
+!!! 5
+%html
+%head
+  %title NOBILIA
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+
+%body.body
+  %div.navigation
+
+    .navlink= link_to "контакты салонов", home_contacts_path, :class => contacts_class?(home_contacts_path)
+
+    .navlink= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
+    .navlink= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
+    .navlink= link_to "команда", home_main_path, :class => main_class?(home_main_path)
+    .navlink= link_to "Портфолио", home_main_path, :class => main_class?(home_main_path)
+
+    .navlink.dropdown#kitchennav
+      %button#dropdownMenu1.btn.btn-default.dropdown-toggle.glyphicon.glyphicon-menu-hamburger{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+        КАТАЛОГ
+      %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+        %li= link_to "мебель и техника", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "Столешницы", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "Внутрение оснащение", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)
+
+    .navlink= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
+
+
+    .dropdown#mobilenav
+      %button#dropdownMenu1.btn.btn-default.dropdown-toggle.glyphicon.glyphicon-menu-hamburger{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+      
+      %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", :style => "left: -171px;"}
+        %li= link_to "контакты салонов", home_contacts_path, :class => contacts_class?(home_contacts_path)
+        %li= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
+        %li= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
+        %li= link_to "команда", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
+
+
+
+
+
+
+
+  /
+    %div.nation
+    %ul
+      %li.language
+        =link_to_unless_current "EN", locale: "en"
+      %li.language 
+        =link_to_unless_current "RU", locale: "ru"
+      %li.language 
+        =link_to_unless_current "AR", locale: "ar"
+    
+    %h3
+      = link_to_unless_current "English", root_path(locale: "en") | 
+      |
+      \#{link_to_unless_current "Rusian", root_path(locale: "ru")} |
+      |
+      \#{link_to_unless_current "Arabic", root_path(locale: "ar")}
+  /
+  /  - if user_signed_in?
+  /    %nav.navbar.navbar-default
+  /      .conteiner
+  /        .navbar-brand= link_to "Административная панель", root_path
+  /        %ul.nav.navbar-nav
+  /          %li= link_to "Создать Фото AMS", new_amsgrouppicture_path, class: "btn btn-default" 
+  /          %li= link_to "Создать Новость AMS", new_amsgroup_path, class: "btn btn-default"
+  /          %li= link_to "Создать Фото AMS Stone", new_amsstonepicture_path, class: "btn btn-default"
+  /          %li= link_to "Создать Товар AMS Stone", new_amsstone_path, class: "btn btn-default"
+  /          %li= link_to "Создать Фото AMS Food", new_amsfoodpicture_path, class: "btn btn-default"
+  /          %li= link_to "Создать Товар AMS Food", new_amsfood_path, class: "btn btn-default"
+  /          %li= link_to "Создать Категорию Stone", new_stonecategory_path, class: "btn btn-default"
+  /          %li= link_to "Создать Категорию Food", new_foodcategory_path, class: "btn btn-default"
+  /        %ul.nav.navbar-nav.navbar-right
+  /          %li= link_to "Выйти", destroy_user_session_path, method: :delete
+  /  - else
+  /    %div.sign
+  /      = link_to "Enter", new_user_session_path
+
+
+
+  = yield
+  .msg
+    - flash.each do |name, msg|
+      = content_tag :div, msg, class: "alert"
