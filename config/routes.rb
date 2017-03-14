@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'team/teammates'
+
 root 'home#main'
 
   get 'home/main'

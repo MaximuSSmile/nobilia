@@ -1,0 +1,75 @@
+
+.teamgraydeliver
+
+.teamheadpickture
+  = image_tag( 'teamhead.jpg', :class => 'teamheadfoto' )
+
+
+.teamwhiteblok
+  %div.teamwhitebloks
+    %div.firstteam
+      %h1 Познакомьтесь с теми, кто воплощает вашу мечту в жизнь!
+
+    %div.secondteam
+      %div.teaamcoloms
+        .conteiner-fluid
+          .row
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+            .col-sm-4
+              = image_tag( 'teammate.jpg', :class => 'teammatefoto' )
+              %h3 Ирина
+              %p Маркетолог
+    %div.linia
+      %hr{:size => "3"}/
+      %div.secondcontact
+
+
+    %div.teampartners
+      .conteiner-fluid
+        .row
+          %h2 Наши партнёры
+          .col-sm-6
+            %h3 Дизайн-студия INTERRA
+            %p Архитекторы студии разрабатывают дизайн интерьера квартир, домов и офисов.
+          .col-sm-6
+            %h3 Салон итальянской плитки ДЕТАЛИ
+            %p Официальный поставщик керамической плитки фабрики RAGNO (концерн MARAZZI GROUP).
+
+
+    %div.linia
+      %hr{:size => "3"}/
+      %div.secondcontact
+    %div.instagram
+      #insta= link_to "NOBILIA в Instagram", home_contacts_path 
+      = image_tag( 'contact.jpg', :class => 'instafoto' )
+    %div.linia
+      %hr{:size => "3"}/
+    %div.thirdteam
+      %h1 Запишитесь в салон на консультацию
+      %p Оставьте заявку, и мы согласуем с вами удобное время для визита в салон. 
+      %p Консультация дизайнера и расчет стоимости проекта бесплатные.
+    %div.foursteam
+      #consider= link_to "ЗАПИСАТЬСЯ", home_contacts_path 
+
+
+    %div.fifthteam
+= render "layouts/bottomnavigation"
