@@ -13,7 +13,7 @@
 
     .navlink= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
     .navlink= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
-    .navlink= link_to "команда", team_teammates_path, :class => main_class?(home_main_path)
+    .navlink= link_to "команда", team_teammates_path, :class => team_class?(team_teammates_path)
     .navlink= link_to "Портфолио", home_main_path, :class => main_class?(home_main_path)
 
     .navlink.dropdown#kitchennav
@@ -35,7 +35,7 @@
         %li= link_to "контакты салонов", home_contacts_path, :class => contacts_class?(home_contacts_path)
         %li= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
         %li= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
-        %li= link_to "команда", team_teammates_path, :class => main_class?(home_main_path)
+        %li= link_to "команда", team_teammates_path, :class => team_class?(team_teammates_path)
         %li= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
 
 

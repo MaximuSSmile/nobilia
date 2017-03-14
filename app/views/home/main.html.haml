@@ -1,9 +1,135 @@
-<h1>Home#main</h1>
-<p>Find me in app/views/home/main.html.erb</p>
+
+.graymain
+
+.headpickturemain
+  = image_tag( 'mainheadfoto.jpg', :class => 'mainhead' )
+
+.mainheadlozung
+  .headwords
+    %p#textmainhead1 Кухни из Германии
+    %p#textmainhead2 ПОД ЗАКАЗ ОТ 4000 ЕВРО
+    %p#textmainhead2 ГАРАНТИЯ 5 ЛЕТ
+    %p#textmainhead3 РАБОТАЕМ ПО ВСЕЙ УКРАИНЕ
+    .mainheadcontact
+      #mainheadcontactcall= link_to "ЗАКАЗАТЬ КУХНЮ", home_contacts_path
+
+.whiteblokmain
+  %div.whitebloks
+    %div.firstmain
+      %h3 Салон NOBILIA разрабатывает индивидуальные проекты кухонь производства немецких фабрик Leicht, Bauformat, Sachsenküchen, а также французской фабрики Grange.
+
+    %div.secondmain
+      %div.maincoloms
+        .comteiner-fluid
+          .row
+            .col-sm-4
+              = image_tag( 'mainbodyfoto1.jpg', :class => 'mainbodyfoto' )
+              %h3 Качество
+              %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
+            .col-sm-4
+              = image_tag( 'mainbodyfoto2.jpg', :class => 'mainbodyfoto' )
+              %h3 Технологии
+              %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
+            .col-sm-4
+              = image_tag( 'mainbodyfoto3.jpg', :class => 'mainbodyfoto' )
+              %h3 Экология
+              %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC. 
+    
+    %div.linia
+      %hr{:size => "3"}/          
+    %div.textmain1
+      %h3 NOBILIA поставляет кухни на заказ напрямую от производителей из Германии и Франции. Мы единственный в Украине импортер кухонной мебели четырех европейских фабрик. У нас собственная служба логистики, команда талантливых дизайнеров и опытных сборщиков.
 
 
-%div.all
-  %div.cont
-    %h2.animated NOBILIA COMING SOON
+    
 
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни в современном стиле
+      .firstfotodesignmain
+        = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
+      .comteiner-fluid
+        .row
+          .col-sm-6
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функция. Эстетика упрощена до минимализма. 
+              %p Современная кухня создана для перфекционистов.
+          .col-sm-6
+            = image_tag( 'mainbodyfotogirl1.jpg', :class => 'mainbodyfoto' )
+            %h4 Марина, дизайнер-консультант
+
+
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни в современном стиле
+      .firstfotodesignmain
+        = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
+      .comteiner-fluid
+        .row
+          .col-sm-6
+            = image_tag( 'mainbodyfotogirl1.jpg', :class => 'mainbodyfoto' )
+            %h4 Марина, дизайнер-консультант
+          .col-sm-6
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функция. Эстетика упрощена до минимализма. 
+              %p Современная кухня создана для перфекционистов.
+
+
+
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни в современном стиле
+      .firstfotodesignmain
+        = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
+      .comteiner-fluid
+        .row
+          .col-sm-6
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функция. Эстетика упрощена до минимализма. 
+              %p Современная кухня создана для перфекционистов.
+          .col-sm-6
+            = image_tag( 'mainbodyfotogirl1.jpg', :class => 'mainbodyfoto' )
+            %h4 Марина, дизайнер-консультант
+
+
+
+.portfoliopickturemain
+  .portfolipick
+    = image_tag( 'mainbodyfotoBIG.jpg', :class => 'mainbodyportfolio' )
+  .greyfonportfoliomain
+  .linkfonportfoliomain
+    .linkblock
+      = link_to "РЕАЛИЗОВАННЫЕ ПРОЕКТЫ", home_contacts_path  
+
+
+
+.whiteblokmain2
+  %div.whitebloks2
+    %div.linia
+      %hr{:size => "3"}/
+    %div.maingorod
+      %h2 Доставка и монтаж по всей Украине
+      %p В салоне NOBILIA можно купить кухню под заказ любой сложности: линейную, угловую, кухню с островом. В своих проектах мы используем все возможные материалы: МДФ, ламинат, пластик, массив дерева. Для отделки применяем шпон, стекло, керамику и бетон. 
+      %p Мы контролируем изготовление заказа в Германии и организуем доставку. Бесплатно устанавливаем кухню в Odesse, Odesse, Odesse, Odesse, Odesse, Odesse и других городах Украины.
+    
+
+    %div.linia
+      %hr{:size => "3"}/
+    %div.thirdcontact
+      %h1 Расчет стоимости кухни
+      %p Оставьте заявку, и мы сделаем предварительный расчет стоимости кухни.
+    %div.fourthcontact
+      #call= link_to "РАССЧИТАТЬ СТОИМОСТЬ КУХНИ", home_contacts_path 
+
+
+    %div.fifthdeliver
 = render "layouts/bottomnavigation"
