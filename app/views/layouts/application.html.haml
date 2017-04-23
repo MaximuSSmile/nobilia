@@ -5,42 +5,42 @@
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
-  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
-  %link{:href => "http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css", :rel => "stylesheet"}
-  %script{:src => "http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"}
+
 
 %body.body
   %div.navigation
 
-    .navlink= link_to "контакты салонов", home_contacts_path, :class => contacts_class?(home_contacts_path)
 
-    .navlink= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
-    .navlink= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
-    .navlink= link_to "команда", team_teammates_path, :class => team_class?(team_teammates_path)
+    .navlink= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)
     .navlink= link_to "Портфолио", home_main_path, :class => main_class?(home_main_path)
+    .navlink= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
+    .navlink= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
+    .navlink= link_to "салон", home_contacts_path, :class => contacts_class?(home_contacts_path)
 
-    .navlink.dropdown#kitchennav
-      %button#dropdownMenu1.btn.btn-default.dropdown-toggle.glyphicon.glyphicon-menu-hamburger{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
-        КАТАЛОГ
-      %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
-        %li= link_to "мебель и техника", home_main_path, :class => main_class?(home_main_path)
-        %li= link_to "Столешницы", home_main_path, :class => main_class?(home_main_path)
-        %li= link_to "Внутрение оснащение", home_main_path, :class => main_class?(home_main_path)
-        %li= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)
-
-    .navlink= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
-
+    /
+      .navlink= link_to "команда", team_teammates_path, :class => team_class?(team_teammates_path)
+    /
+      .navlink.dropdown#kitchennav
+        %button#dropdownMenu1.btn.btn-default.dropdown-toggle.glyphicon.glyphicon-menu-hamburger{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+          КАТАЛОГ
+        %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1"}
+          %li= link_to "мебель и техника", home_main_path, :class => main_class?(home_main_path)
+          %li= link_to "Столешницы", home_main_path, :class => main_class?(home_main_path)
+          %li= link_to "Внутрение оснащение", home_main_path, :class => main_class?(home_main_path)
+          %li= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)    
+    .right= link_to image_tag( 'Logo_nobilia.png', :class => 'nobilialogo', :title => "ГЛАВНАЯ" ), home_main_path, :class => main_class?(home_main_path)
+    /
+      .navlink.right= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
 
     .dropdown#mobilenav
       %button#dropdownMenu1.btn.btn-default.dropdown-toggle.glyphicon.glyphicon-menu-hamburger{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
       
-      %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", :style => "left: -171px;"}
-        %li= link_to "контакты салонов", home_contacts_path, :class => contacts_class?(home_contacts_path)
-        %li= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
+      %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", :style => "right: 171px;"}
+        %li= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "Портфолио", home_main_path, :class => main_class?(home_main_path)
         %li= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
-        %li= link_to "команда", team_teammates_path, :class => team_class?(team_teammates_path)
-        %li= link_to "ГЛАВНАЯ", home_main_path, :class => main_class?(home_main_path)  
-
+        %li= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
+        %li= link_to "салон", home_contacts_path, :class => contacts_class?(home_contacts_path)
 
 
 

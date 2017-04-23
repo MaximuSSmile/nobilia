@@ -35,6 +35,7 @@ gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'devise', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem "active_link_to"
+gem "fotoramajs"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

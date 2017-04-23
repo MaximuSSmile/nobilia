@@ -11,13 +11,22 @@
 
 .delihead {
 	width: 100%;
-
 	min-width: 824px;
 	margin: 0px auto;
 	    max-height: 800px;
 	z-index: 99;
 }
+/*
+			@media screen and (max-width: 824px) {
+						.delihead {
+							min-width: 100%;
 
+						}
+						.headpickture{
+							min-width: 100%;
+						}
+			}
+*/
 .graydeliver {
 	  background-color: rgba(41,41,41,.6);
 	  width: 100%;

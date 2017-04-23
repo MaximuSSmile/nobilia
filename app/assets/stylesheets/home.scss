@@ -30,7 +30,7 @@
 
 .navlink {
   display: inline-block;
-  float: right;
+  float: left;
     font-family: "Helvetica Neue","Arial","sans-serif";
     font-size: 12px;
     text-transform: uppercase;
@@ -62,6 +62,18 @@ a.active {
 .navlink :active {
         color: #9c9999;
 }
+
+.right{
+  float: right;
+}
+  .nobilialogo {
+    width: 220px;
+    height: 65px;
+    margin-right: 50px;
+    margin-top: -20px;
+  }
+
+
 
 #kitchennav{
     display: inline-block;
@@ -101,9 +113,9 @@ a.active {
 
 #mobilenav{
   position: fixed;
-  right: 5px;
+  left: 25px;
     display: none;
-      float: right;
+      float: left;
     font-family: "Helvetica Neue","Arial","sans-serif";
     font-size: 12px;
     text-transform: uppercase;
