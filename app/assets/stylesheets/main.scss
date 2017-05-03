@@ -173,28 +173,38 @@
 	margin: 10px auto;
 }
 
-.secondcontact > p {
-	margin-bottom: 20px;
-}
+		.secondcontact > p {
+			margin-bottom: 20px;
+		}
 
 
-.maincoloms > .col-sm-6 {
-	padding-bottom: 20px;
-}
+		.maincoloms > .col-sm-6 {
+			padding-bottom: 20px;
+		}
 
-.maincoloms {
-	
+		.maincoloms {
+			
 
-	width: 100%;
-	height: auto;
-	margin: 10px auto;
-	padding: 5px;
+			width: 100%;
+			height: auto;
+			margin: 10px auto;
+			padding: 5px;
 
-}
-	.mainbodyfoto{
-		width: 100%;
-		height: auto;
-	}
+		}
+			.mainbodyfoto{
+				width: 100%;
+				height: auto;
+			}
+	.mainpcolcinus {
+		width: 31.33333333%;
+		margin: 1%;
+	}		
+
+	    @media screen and (max-width: 5in) {
+	    				.mainpcolcinus {
+						width: 100%;
+					}		
+				}
 
 
 .textmain1 {
