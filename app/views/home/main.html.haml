@@ -22,15 +22,15 @@
       %div.maincoloms
         .comteiner-fluid
           .row
-            .mainpcolcinus.inline.right
+            .col-md-4
               = image_tag( 'mainbodyfoto1.jpg', :class => 'mainbodyfoto' )
               %h3 Качество
               %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
-            .mainpcolcinus.inline.right
+            .col-md-4
               = image_tag( 'mainbodyfoto2.jpg', :class => 'mainbodyfoto' )
               %h3 Технологии
               %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
-            .mainpcolcinus.inline.right
+            .col-md-4
               = image_tag( 'mainbodyfoto3.jpg', :class => 'mainbodyfoto' )
               %h3 Экология
               %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC. 
@@ -41,6 +41,7 @@
       %h3 NOBILIA поставляет кухни на заказ напрямую от производителей из Германии и Франции. Мы единственный в Украине импортер кухонной мебели четырех европейских фабрик. У нас собственная служба логистики, команда талантливых дизайнеров и опытных сборщиков.
 
 
+
     
 
     %div.linia
@@ -48,11 +49,12 @@
     .firstdesignmain
       %h2 Кухни в современном стиле
       .firstfotodesignmain
-        .fotorama{"data-nav" => "false", "data-autoplay"  => "4000", "data-loop" =>"true"}
+        .fotorama{"data-nav" => "false", "data-transition" => "crossfade","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
           = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
           = image_tag( 'mainbodyfoto3.jpg', :class => 'mainbodyfoto' )
           = image_tag( 'mainbodyfoto2.jpg', :class => 'mainbodyfoto' )
           = image_tag( 'mainbodyfoto1.jpg', :class => 'mainbodyfoto' )
+
       .comteiner-fluid
         .row
           .col-md-6
@@ -91,7 +93,11 @@
     .firstdesignmain
       %h2 Кухни в современном стиле
       .firstfotodesignmain
-        = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
+        .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "2000", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
+          = image_tag( 'mainbodyfoto4.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'mainbodyfoto3.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'mainbodyfoto2.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'mainbodyfoto1.jpg', :class => 'mainbodyfoto' )
       .comteiner-fluid
         .row
           .col-md-6

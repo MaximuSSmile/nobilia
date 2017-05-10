@@ -2,25 +2,22 @@
   .botnavfirst
 
     = link_to "ГЛАВНАЯ", home_main_path
-    = link_to "ПОРТФОЛИО", home_main_path
     = link_to "КУХНИ", home_main_path
-    = link_to "МЕБЕЛЬ И ТЕХНИКА"
-    = link_to "СТОЛЕШНИЦЫ", home_main_path
-    = link_to "ВНУТРЕНИЕ ОСНАЩЕНИЕ"
-
+    = link_to "ПОРТФОЛИО", home_main_path
 
   .botnavsecond
-    = link_to "КОНТАКТЫ САЛОНОВ", home_contacts_path 
+    = link_to "КОНТАКТЫ САЛОНA", home_contacts_path 
     = link_to "ДОСТАВКА", home_delivery_path 
     = link_to "ДИЗАЙНЕРАМ", home_design_path 
-    = link_to "КОМАНДА", team_teammates_path 
+
   
   .botnavfourth
     %p NOBILIA — кухни из Германии, мебель, аксессуары
   .botnavfifth
     %p ОДЕССА-МАМА, Екатерининская 73
   .botnavsixth
-    %p с 10:00 до 20:00 без выходных
+    %p Пн.-Сб.: с 10:00 до 19:00   
+    %p Вс.: Выходной
 
 
 
@@ -35,8 +32,6 @@
       = link_to image_tag( 'google.svg', :class => 'iconbar' ), "http://nobilia.com.ua/nobilia.com.ua/Glavnaa.html", target: '_blank'
     .contactlink
       = link_to image_tag( 'mail.svg', :class => 'iconbar' ), "http://nobilia.com.ua/nobilia.com.ua/Glavnaa.html", target: '_blank'
-
-
 
   .botnavseventh
     %h3 03 455 4675  |  784 54 33  |  design@nobilia.com.ua

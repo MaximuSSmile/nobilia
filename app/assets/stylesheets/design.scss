@@ -15,7 +15,7 @@
     font-style: normal;
     color: #1f1f1f;
       position: relative;
-      margin-top: 65px;
+      margin-top: 245px;
     z-index: 102;
 }
 
@@ -56,6 +56,16 @@
 }
 .colomicondesign {
 	text-align: center;
+}
+
+
+.mposition {
+	font-weight: bold;
+}
+@media screen and (max-width: 970px) {
+	.mposition {
+		text-align: center;
+	}
 }
 
 .companionfoto {
