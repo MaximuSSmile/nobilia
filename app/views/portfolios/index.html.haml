@@ -1,0 +1,9 @@
+- @portfolio.each_slice(3) do |pos|
+	.row
+		- pos.each do |po|
+			.col-md-4
+				.recipe
+					.image_wrapper
+						= link_to po do
+							= image_tag po.image.url(:medium)
+					%h2= link_to po.title, po

@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+ resources :portfolios
+
+
+
   get 'team/teammates'
 
 root 'home#main'

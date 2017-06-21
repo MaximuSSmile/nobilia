@@ -1,0 +1,42 @@
+.main_content
+	#recipe_top.row
+		.col-md-4
+			= image_tag @portfolio.image.url(:medium), class: "portfolio_image"
+		.col-md-8
+			#portfolio_info
+				%h1= @portfolio.title
+				%p.description= @portfolio.description1
+				%p
+					Submitted by
+					= @portfolio.user.email
+
+	.row
+
+
+		.col-md-4
+			#ingredients
+				%h2 КУХНИ
+				%ul
+					- @portfolio.kitchensions.each do |kkk|
+						%li= kkk.kit
+
+		.col-md-4
+			#directions
+				%h2 ТЕХНИКА
+				%ul
+					- @portfolio.technitions.each do |tt|
+						%li= tt.tech
+
+		.col-md-4
+			#directions
+				%h2 Foto
+				%ul
+					- @portfolio.poimages.each do |pp|
+						%li= image_tag pp.pimg.url(:medium), class: "portfolio_image"
+
+	.row
+		.col-md-12
+			= link_to "Back", root_path, class: "btn btn-default"
+			- if user_signed_in?
+				= link_to "Edit", edit_portfolio_path, class: "btn btn-default"
+				= link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"

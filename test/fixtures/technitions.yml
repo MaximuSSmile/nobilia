@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tech: MyString
+  portfolio_id: 
+
+two:
+  tech: MyString
+  portfolio_id: 

@@ -1,0 +1,2 @@
+module KitchenFotosHelper
+end

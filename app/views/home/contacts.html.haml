@@ -59,7 +59,18 @@
       %h1 Запишитесь в салон на консультацию
       %p Оставьте заявку, и мы согласуем с вами удобное время для визита в салон.
     %div.fourthcontact
-      #call= link_to "ЗАПИСАТЬСЯ", home_contacts_path 
+      
+      %div.tabbed
+        %input{:type=>"checkbox", :name => "tabs", :id=>"tab-nav-1"}
+          %label{:for=>"tab-nav-1"} ЗАПИСАТЬСЯ
+        .bodyamsgroup
+        %div{ :class => ['tabs']}
+          %div
+            %h2 Давайте обсудим Вашу Шикарную кухню
+            %h3 Ваше Имя:
+            %h3 Телефон:
+            %p2 Наш дизайнер свяжется с Вам и согласует все нюансы  
+            #call= link_to "ОТПРАВИТЬ", home_contacts_path 
 
 
     %div.fifthdeliver

@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 
-ruby '2.3.1'
 
 
 
@@ -37,6 +36,7 @@ gem 'aws-sdk', '< 2.0'
 gem "active_link_to"
 gem "fotoramajs"
 gem 'mail_form', '~> 1.6'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
