@@ -10,6 +10,7 @@ class PortfoliosController < ApplicationController
 	end
 
 	def new
+		@port = Portfolio.all.order("created_at DESC")
 		@portfolio = current_user.portfolios.build
 	end
 
@@ -43,7 +44,8 @@ class PortfoliosController < ApplicationController
 
 	def portfolio_params
 		params.require(:portfolio).permit(:title, :city, :description1, :description2, :portfolio_turn, :image,
-		 kitchensis_attributes: [:id, :ki, :_destroy], kitchensions_attributes: [:id, :kit, :_destroy], technitions_attributes: [:id, :tech, :_destroy], poimages_attributes: [:id, :pimg, :_destroy])
+		 kitchensis_attributes: [:id, :ki, :_destroy], kitchensions_attributes: [:id, :kit, :_destroy], 
+		 technitions_attributes: [:id, :tech, :_destroy], poimages_attributes: [:id, :imgnum, :pimg, :_destroy])
 	end
 
 	def find_portfolio

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170621141428) do
+ActiveRecord::Schema.define(version: 20170622015734) do
 
   create_table "kitchensions", force: :cascade do |t|
     t.string   "kit"
@@ -22,16 +22,8 @@ ActiveRecord::Schema.define(version: 20170621141428) do
 
   add_index "kitchensions", ["portfolio_id"], name: "index_kitchensions_on_portfolio_id"
 
-  create_table "kitchensis", force: :cascade do |t|
-    t.string   "ki"
-    t.integer  "portfolio_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  add_index "kitchensis", ["portfolio_id"], name: "index_kitchensis_on_portfolio_id"
-
   create_table "poimages", force: :cascade do |t|
+    t.string   "imgnum"
     t.integer  "portfolio_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false

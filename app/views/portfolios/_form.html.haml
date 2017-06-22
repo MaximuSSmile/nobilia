@@ -38,8 +38,12 @@
 			.col-md-6
 				%h3 Directions
 				#directions
+					
 					= f.simple_fields_for :poimages do |poi|
 						= render 'poimage_fields', f: poi
+
+
+
 					.links
 						= link_to_add_association 'Добавить изображение ', f, :poimages, class: "btn btn-default add-button"
 

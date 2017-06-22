@@ -6,9 +6,7 @@ class Portfolio < ActiveRecord::Base
 	has_many :technitions
 	has_many :poimages
 
-	accepts_nested_attributes_for :kitchensis,
-  															reject_if: proc { |attributes| attributes['ki'].blank? },
-  															allow_destroy: true
+
 
 	accepts_nested_attributes_for :kitchensions,
   															reject_if: proc { |attributes| attributes['kit'].blank? },
@@ -19,6 +17,8 @@ class Portfolio < ActiveRecord::Base
   															allow_destroy: true
 
  	accepts_nested_attributes_for :poimages,
+  															reject_if: proc { |attributes| attributes['imgnum'].blank? },
+  															allow_destroy: true,
   															reject_if: proc { |attributes| attributes['pimg'].blank? },
   															allow_destroy: true
 

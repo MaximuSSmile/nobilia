@@ -32,7 +32,9 @@
 				%h2 Foto
 				%ul
 					- @portfolio.poimages.each do |pp|
-						%li= image_tag pp.pimg.url(:medium), class: "portfolio_image"
+						%li
+							= pp.imgnum
+							= image_tag pp.pimg.url(:medium), class: "portfolio_image"
 
 	.row
 		.col-md-12
