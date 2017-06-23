@@ -7,12 +7,12 @@
 
       - pos.each do |po|
         .portfolio_block
-          .portfolio_image_wrapper
+          .portfolio_image_wrapper{:style=>"display: inline-block"}
             = link_to po do
               = image_tag po.image.url(:medium), class: "portfolio_block_img"
-          .portf_title
+          .portf_title{:style=>"display: inline-block"}
             %h1= link_to po.title, po
-          .portf_text
+          .portf_text{:style=>"display: inline-block"}
             %p= truncate(po.description1, length: 170)
           .port_button
             = link_to "ПОДРОБНЕЕ", po,class: "port_button_block"
