@@ -3,7 +3,7 @@ class PortfoliosController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-		@portfolio = Portfolio.all.order("created_at DESC")
+		@portfolio = Portfolio.all.order(:portfolio_turn)
 	end
 
 	def show
