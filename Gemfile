@@ -32,7 +32,7 @@ gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'devise', '~> 4.2'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk', '~> 2.10', '>= 2.10.2'
 gem "active_link_to"
 gem "fotoramajs"
 gem 'mail_form', '~> 1.6'
