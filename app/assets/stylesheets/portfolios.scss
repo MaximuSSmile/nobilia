@@ -148,7 +148,9 @@ $t-opensans: 'Open Sans', sans-serif;
               .portf_text p {                  
                   font-size: 1vw;                
               }
-
+              .portf_text {                  
+                  height: 115px;                
+              }
       }
 
 
@@ -182,7 +184,7 @@ $t-opensans: 'Open Sans', sans-serif;
     padding: 0px;
     p {
       color: $color-grey;
-      height: 90px;
+      height: 100px;
     }
   }
 
