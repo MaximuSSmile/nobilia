@@ -38,7 +38,7 @@
       
       %ul.dropdown-menu{"aria-labelledby" => "dropdownMenu1", :style => "right: 171px;"}
         %li= link_to "КУХНИ", home_main_path, :class => main_class?(home_main_path)
-        %li= link_to "Портфолио", home_main_path, :class => main_class?(home_main_path)
+        %li= link_to "Портфолио", portfolios_path, :class => portfolios_class?(portfolios_path)
         %li= link_to "дизайнерам", home_design_path, :class => design_class?(home_design_path)
         %li= link_to "доставка", home_delivery_path, :class => delivery_class?(home_delivery_path)
         %li= link_to "салон", home_contacts_path, :class => contacts_class?(home_contacts_path)

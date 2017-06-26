@@ -16,6 +16,8 @@
             %p= truncate(po.description1, length: 170)
           .port_button
             = link_to "ПОДРОБНЕЕ", po,class: "port_button_block"
-
+            - if user_signed_in?
+              = link_to "Edit", edit_portfolio_path(po), class: "btn btn-default"
+      
 
 = render "layouts/bottomnavigation"
