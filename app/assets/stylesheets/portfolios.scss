@@ -6,7 +6,7 @@
 $logo-red: #f20a0f;
 $color-white: #ffffff;
 $color-grey: #1c1c1c;
-$t-opensans: 'Open Sans', sans-serif;
+
 
 /*   /////////// INDEX PAGE BEGIN /////////////   */
 
@@ -222,38 +222,100 @@ $t-opensans: 'Open Sans', sans-serif;
 /*   /////////// SHOW PAGE BEGIN /////////////   */
 
 
-
-.project_title {
-  width: auto;
-  margin: 20px auto;
-
-  font-family: "Open Sans";
-    font-size: 42px;
-    line-height: 1.2em;
-    text-transform: none;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+.standart-rubber-block {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
 }
 
-.project_description {
-  width: auto;
-  margin: 20px auto;
-
-  font-family: "Open Sans";
-    font-size: 15px;
-    line-height: 1.4em;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+.standart-text-params {
+    font-family: "Open Sans";
+      font-size: 42px;
+      line-height: 1.2em;
+      text-transform: none;
+      letter-spacing: 0px;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
 }
 
 
-.project_info {
-  background-color: grey;
-}
+.portfolio_show_first_block {
+    @extend .standart-rubber-block;
+  }
+      .project_title {
+        width: auto;
+        margin: 20px auto;
+        @extend .standart-text-params;
+      }
+
+.portfolio_show_second_block {
+    @extend .standart-rubber-block;
+
+  } 
+      .project_description {
+        width: auto;
+        margin: 20px auto;
+        @extend .standart-text-params;
+          font-size: 15px;
+          line-height: 1.4em;
+      }
+
+
+.portfolio_show_third_block {
+    @extend .standart-rubber-block;
+
+  }
+
+
+.portfolio_show_fourth_block {
+    @extend .standart-rubber-block;
+
+  }
+
+
+.portfolio_show_fifth_block {
+    @extend .standart-rubber-block;
+
+  }
+            .project_info {
+              background-color: grey;
+
+          
+              .project_info_kitchens {
+                %h2 {
+               
+                  %ul {
+                  }
+                }
+              }
+                    
+              .project_info_technick {
+                %h2 {
+                  %ul{
+
+                  }
+                }
+              }
+            }
+
+.portfolio_show_sixth_block {
+    @extend .standart-rubber-block;
+    .project_foto {
+      width: 80%;
+      margin: 5px auto;
+
+    }
+  }
+
+
+
+
+
+
+
+
+
 
 
 .project_foto {
