@@ -306,7 +306,9 @@ $color-grey: #1c1c1c;
             }
           }
         }
-        .project_info_kitchens h3 {
+
+
+    .project_info_k_and_t_h3 {
           font-family: "Open Sans";
           font-size: 18px;
           line-height: 1.4em;
@@ -314,9 +316,8 @@ $color-grey: #1c1c1c;
           letter-spacing: 0px;
           font-weight: 600;
           font-style: normal;
-        }
-
-        .project_info_kitchens ul { 
+         }
+    .project_info_k_and_t_ul {
             font-family: "Open Sans";
             font-size: 15px;
             line-height: 1.4em;
@@ -324,6 +325,21 @@ $color-grey: #1c1c1c;
             font-weight: 400;
             font-style: normal;
             color: #1f1f1f;
+         }
+        .project_info_kitchens h3 {
+          @extend .project_info_k_and_t_h3;
+
+        }
+
+        .project_info_kitchens ul { 
+           @extend .project_info_k_and_t_ul;
+         }
+
+         .project_info_technick h3 {
+           @extend .project_info_k_and_t_h3;
+         }
+         .project_info_technick ul {
+           @extend .project_info_k_and_t_ul;
          }
 .portfolio_show_sixth_block {
     @extend .standart-rubber-block;
