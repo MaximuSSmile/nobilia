@@ -22,12 +22,12 @@
   .portfolio_show_fifth_block
     .project_info
       .project_info_kitchens
-        %h2 КУХНИ
+        %h3{:style => "padding-left: 70px;"} Элементы Кухни
         %ul
           - @portfolio.kitchensions.each do |kkk|
             %li= kkk.kit
       .project_info_technick
-        %h2 ТЕХНИКА
+        %h3{:style => "text-align: center;"} Механизмы и Технологии
         %ul
           - @portfolio.technitions.each do |tt|
             %li= tt.tech
@@ -35,54 +35,14 @@
 
   .portfolio_show_sixth_block
     .project_foto
-      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "600/300", "data-width" => "100%"}
+      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "2/1", "data-width" => "100%"}
         - @portfolio.poimages.each do |pp|
-          = image_tag pp.pimg.url(:medium), class: "salon"
+          = image_tag pp.pimg.url(:hard), class: "salon"
         = image_tag( 'k3.jpg', :class => 'salon' )
               
-
-
-  .portfolio_show_first_block
-    .main_content
-      #recipe_top
-        .col-md-4
-          = image_tag @portfolio.image.url(:medium), class: "portfolio_image"
-        .col-md-4
-          #portfolio_info
-            %h1= @portfolio.title
-            %p.description= @portfolio.description1
-            %p
-              Submitted by
-              = @portfolio.user.email
-
-      .row
-        .col-md-4
-          #ingredients
-            %h2 КУХНИ
-            %ul
-              - @portfolio.kitchensions.each do |kkk|
-                %li= kkk.kit
-
-        .col-md-4
-          #directions
-            %h2 ТЕХНИКА
-            %ul
-              - @portfolio.technitions.each do |tt|
-                %li= tt.tech
-
-        .col-md-4
-          #directions
-            %h2 Foto
-            %ul
-              - @portfolio.poimages.each do |pp|
-                %li
-                  = pp.imgnum
-                  = image_tag pp.pimg.url(:medium), class: "portfolio_image"
-
-
-      .row
-        .col-md-12
-          = link_to "Back", root_path, class: "btn btn-default"
-          - if user_signed_in?
-            = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
-            = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
+    .row
+      .col-md-12
+        = link_to "Back", root_path, class: "btn btn-default"
+        - if user_signed_in?
+          = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
+          = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"

@@ -25,6 +25,6 @@ class Portfolio < ActiveRecord::Base
 
   validates :title, :city, :description1, :description2, :portfolio_turn, :image, presence: true
 
-	has_attached_file :image, styles: { :medium => "600x400#", :hard => "2400x1600#" }
+	has_attached_file :image, styles: { :medium => "600x400#", :hard => "2400x1200#" }
 	validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end

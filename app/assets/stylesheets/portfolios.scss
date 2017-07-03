@@ -224,8 +224,11 @@ $color-grey: #1c1c1c;
 
 .standart-rubber-block {
     width: 100%;
+    min-width: 900px;
+    max-width: 1020px;
     height: auto;
     margin: 10px auto;
+    padding: 0 50px;
 }
 
 .standart-text-params {
@@ -276,46 +279,61 @@ $color-grey: #1c1c1c;
 
 .portfolio_show_fifth_block {
     @extend .standart-rubber-block;
-
+    max-width: 1020px;
   }
-            .project_info {
-              background-color: grey;
-
-          
-              .project_info_kitchens {
-                %h2 {
-               
-                  %ul {
-                  }
-                }
-              }
-                    
-              .project_info_technick {
-                %h2 {
-                  %ul{
-
-                  }
-                }
+        .project_info {
+      
+          .project_info_kitchens {
+            display: inline-block;
+            float: left;
+            width: 49%;
+            margin: 5px auto;
+            %h3 {
+                       
+              %ul {
               }
             }
+          }
+                
+          .project_info_technick {
+            display: inline-block;
+            width: 49%;
+            margin: 5px auto;
+            %h3 {
+              %ul{ 
 
+              }
+            }
+          }
+        }
+        .project_info_kitchens h3 {
+          font-family: "Open Sans";
+          font-size: 18px;
+          line-height: 1.4em;
+          text-transform: none;
+          letter-spacing: 0px;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .project_info_kitchens ul { 
+            font-family: "Open Sans";
+            font-size: 15px;
+            line-height: 1.4em;
+            letter-spacing: 0px;
+            font-weight: 400;
+            font-style: normal;
+            color: #1f1f1f;
+         }
 .portfolio_show_sixth_block {
     @extend .standart-rubber-block;
+    max-width: 1600px;
     .project_foto {
-      width: 80%;
+      width: 100%;
       margin: 5px auto;
 
     }
   }
-
-
-
-
-
-
-
-
-
 
 
 .project_foto {
