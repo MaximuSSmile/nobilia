@@ -13,7 +13,7 @@
           .portf_title
             %h1= link_to po.title, po
           .portf_text{:style=>"display: inline-block"}
-            %p= truncate(po.description1, length: 170)
+            %p= truncate(po.description1, length: 150)
           .port_button
             = link_to "ПОДРОБНЕЕ", po,class: "port_button_block"
             - if user_signed_in?
