@@ -18,6 +18,8 @@
             = link_to "ПОДРОБНЕЕ", po,class: "port_button_block"
             - if user_signed_in?
               = link_to "Edit", edit_portfolio_path(po), class: "btn btn-default"
-      
+    .portfolio_block
+      - if user_signed_in?
+        = link_to "НОВЫЙ ПРОЕКТ", new_portfolio_path, class: "btn btn-default"
 
 = render "layouts/bottomnavigation"

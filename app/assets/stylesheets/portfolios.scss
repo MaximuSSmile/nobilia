@@ -328,19 +328,18 @@ $color-grey: #1c1c1c;
          }
         .project_info_kitchens h3 {
           @extend .project_info_k_and_t_h3;
-
         }
-
         .project_info_kitchens ul { 
            @extend .project_info_k_and_t_ul;
          }
-
          .project_info_technick h3 {
            @extend .project_info_k_and_t_h3;
          }
          .project_info_technick ul {
            @extend .project_info_k_and_t_ul;
          }
+
+  
 .portfolio_show_sixth_block {
     @extend .standart-rubber-block;
     max-width: 1600px;
