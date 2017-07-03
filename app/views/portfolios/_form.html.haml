@@ -1,50 +1,53 @@
 = simple_form_for @portfolio, html: { multipart: true } do |f|
-	- if @portfolio.errors.any?
-		#errors
-			%p
-				= @portfolio.errors.count
-				Prevented this portfolio froms saving
-			%ul
-				- @portfolio.errors.full_messages.each do |msg|
-					%li= msg
-	.panel-body
-		= f.input :title, input_html: { class: 'form-control' }
-		= f.input :city, input_html: { class: 'form-control' }
-		= f.input :description1, input_html: { class: 'form-control' }
-		= f.input :description2, input_html: { class: 'form-control' }
-		= f.input :portfolio_turn, input_html: { class: 'form-control' }
-		= f.input :image, input_html: { class: 'form-control' }
+  - if @portfolio.errors.any?
+    #errors
+      %p
+        = @portfolio.errors.count
+        Prevented this portfolio froms saving
+      %ul
+        - @portfolio.errors.full_messages.each do |msg|
+          %li= msg
 
-		.row
+  .portfolio_show_second_block
+    .project_title
+      = f.input :title, label: 'Название проекта', input_html: { class: 'form-control' }
+      = f.input :city, null: "ODESSA MAMA", label: 'В каком городе', input_html: { class: 'form-control' }
+      = f.input :description1, label: 'Первичное описание', input_html: { class: 'form-control' }
+      = f.input :description2, label: 'Вторичное описание', input_html: { class: 'form-control' }
+      = f.input :portfolio_turn, label: 'Нумерация проекта в очереди (желательно записывать десятыми)', input_html: { class: 'form-control' }
+      = f.input :image, label: 'Заглавное фото', input_html: { class: 'form-control' }
 
-			.col-md-6
-				%h3 Ingredients
+  .portfolio_show_fifth_block
+    .project_info
+      .project_info_kitchens
+        %h3 Элементы Кухни
 
-				#ingredients
-					= f.simple_fields_for :kitchensions do |kitt|
-						= render 'kitchension_fields', f: kitt
-					.links
-						= link_to_add_association 'добавить кухню', f, :kitchensions, class: "btn btn-default add-button"
-
-
-			.col-md-6
-				%h3 Directions
-				#directions
-					= f.simple_fields_for :technitions do |tec|
-						= render 'technition_fields', f: tec
-					.links
-						= link_to_add_association 'добавить технику', f, :technitions, class: "btn btn-default add-button"
-
-			.col-md-6
-				%h3 Directions
-				#directions
-					
-					= f.simple_fields_for :poimages do |poi|
-						= render 'poimage_fields', f: poi
+        #ingredients
+          = f.simple_fields_for :kitchensions do |kitt|
+            = render 'kitchension_fields', f: kitt
+          .links
+            = link_to_add_association 'добавить кухню', f, :kitchensions, class: "btn btn-default add-button"
 
 
+      .project_info_technick
+        %h3 Механизмы и Технологии
+        #directions
+          = f.simple_fields_for :technitions do |tec|
+            = render 'technition_fields', f: tec
+          .links
+            = link_to_add_association 'добавить технику', f, :technitions, class: "btn btn-default add-button"
 
-					.links
-						= link_to_add_association 'Добавить изображение ', f, :poimages, class: "btn btn-default add-button"
+  .portfolio_show_sixth_block
+    .project_foto
+      %h3 Фотоальбом проекта
+      #directions
+        = f.simple_fields_for :poimages do |poi|
+          = render 'poimage_fields', f: poi
+        .links
+          = link_to_add_association 'Добавить изображение ', f, :poimages, class: "btn btn-default add-button"
 
-	= f.button :submit, class: "btn btn-primary"
+    = f.button :submit, class: "btn btn-primary"
+
+
+  .portfolio_show_sixth_block
+    = link_to "Back", portfolios_path, class: "btn btn-default" 
