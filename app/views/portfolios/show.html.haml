@@ -46,3 +46,5 @@
         - if user_signed_in?
           = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
           = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
+
+= render "layouts/bottomnavigation"
