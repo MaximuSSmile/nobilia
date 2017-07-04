@@ -284,8 +284,7 @@ $color-grey: #1c1c1c;
         .project_info {
       
           .project_info_kitchens {
-            position: relative;
-            top: 0px;
+            vertical-align: top;
             display: inline-block;
             width: 49%;
             margin: 5px auto;
@@ -297,8 +296,7 @@ $color-grey: #1c1c1c;
           }
                 
           .project_info_technick {
-            position: relative;
-            top: 0px;
+            vertical-align: top;
             display: inline-block;
             width: 49%;
             margin: 5px auto;
