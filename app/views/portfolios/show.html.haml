@@ -15,23 +15,24 @@
     .project_description
       = @portfolio.description1
 
+  /    
+    .portfolio_show_fourth_block
+      .project_description
+        = @portfolio.description2
 
-  .portfolio_show_fourth_block
-    .project_description
-      = @portfolio.description2
-
-  .portfolio_show_fifth_block
-    .project_info
-      .project_info_kitchens
-        %h3{:style => "padding-left: 70px;"} Элементы Кухни
-        %ul
-          - @portfolio.kitchensions.each do |kkk|
-            %li= kkk.kit
-      .project_info_technick
-        %h3{:style => "text-align: center;"} Механизмы и Технологии
-        %ul
-          - @portfolio.technitions.each do |tt|
-            %li= tt.tech
+  /
+    .portfolio_show_fifth_block
+      .project_info
+        .project_info_kitchens
+          %h3{:style => "padding-left: 70px;"} Элементы Кухни
+          %ul
+            - @portfolio.kitchensions.each do |kkk|
+              %li= kkk.kit
+        .project_info_technick
+          %h3{:style => "text-align: center;"} Механизмы и Технологии
+          %ul
+            - @portfolio.technitions.each do |tt|
+              %li= tt.tech
 
 
   .portfolio_show_sixth_block
