@@ -1,10 +1,11 @@
 
 .whiteblockportfolio
   .portfolio_show_first_block
-    = link_to "Back", portfolios_path, class: "btn btn-default"
-    - if user_signed_in?
-      = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
-      = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
+    .navbut_portfolio
+      = link_to "ПОРТФОЛИО", portfolios_path
+      - if user_signed_in?
+        = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
+        = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
 
   .portfolio_show_second_block
     .project_title
@@ -42,9 +43,10 @@
 
     .row
       .col-md-12
-        = link_to "Back", root_path, class: "btn btn-default"
-        - if user_signed_in?
-          = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
-          = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
+        .navbut_portfolio
+          = link_to "ПОРТФОЛИО", portfolios_path
+          - if user_signed_in?
+            = link_to "Edit", edit_portfolio_path, class: "btn btn-default"
+            = link_to "Delete", portfolio_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"
 
 = render "layouts/bottomnavigation"

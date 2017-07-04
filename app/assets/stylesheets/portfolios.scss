@@ -363,3 +363,24 @@ $color-grey: #1c1c1c;
     margin: 10px auto;
   }
 }
+
+
+
+.navbut_portfolio a {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  font-weight: 20px;
+  font-family: "Open Sans";
+  color: $logo-red;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+
+.navbut_portfolio a:hover {
+    text-decoration: none;
+    background-color: $logo-red;
+    color: $color-white;
+    border-radius: 4px;
+}
