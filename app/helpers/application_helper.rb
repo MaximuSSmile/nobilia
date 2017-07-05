@@ -23,6 +23,10 @@ module ApplicationHelper
     return 'active' if request.path == test_path
     ''
   end
+    def furniturs_class?(test_path)
+    return 'active' if request.path == test_path
+    ''
+  end
     def current_class?(test_path)
     return 'active' if request.path == test_path
     ''
