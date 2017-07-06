@@ -7,25 +7,45 @@
 	  margin-top: -800px;
 }
 
-.headpickturemain {
-	position: absolute;
-	width: 100%;
-	/*min-width: 824px;*/
-	margin-top: -980px;
-	height: 800px;
-	z-index: 100;
-}
+			.headpickturemain {
+				display: block;
+				position: absolute;
+				width: 100%;
+				/*min-width: 824px;*/
+				margin-top: -980px;
+				height: 800px;
+				z-index: 100;
+			}
 
-		.mainhead {
-			width: 100%;
+					.mainhead {
+						width: 100%;
 
-			/*min-width: 824px;*/
-			margin: 0px auto;
-			    max-height: 1300px;
-			        min-height: 980px;
-			z-index: 99;
-		}
+						/*min-width: 824px;*/
+						margin: 0px auto;
+						    max-height: 1300px;
+						        min-height: 980px;
+						z-index: 98;
+					}
 
+			.headpickturemainmob {
+				display: none;
+				position: absolute;
+				width: 100%;
+				/*min-width: 824px;*/
+				margin-top: -980px;
+				height: 800px;
+				z-index: 99;
+			}
+
+			    @media screen and (max-width: 1100px) {
+	
+						.headpickturemain {
+							display: none;
+						}	
+						.headpickturemainmob{
+							display: block;
+						}
+				}
 
 .mainheadlozung {
 	position: absolute;
