@@ -11,18 +11,18 @@ end
 
 
   accepts_nested_attributes_for :foto_furnitur,
-                                reject_if: proc { |attributes| attributes['furtitle'].blank? },
+                                  reject_if: proc { |attributes| attributes['furtitle'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['furdesc'].blank? },
-                                allow_destroy: true
+                                  reject_if: proc { |attributes| attributes['furdesc'].blank? },
+                                allow_destroy: true,
                                   reject_if: proc { |attributes| attributes['furturn'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['furmodel'].blank? },
-                                allow_destroy: true
+                                  reject_if: proc { |attributes| attributes['furmodel'].blank? },
+                                allow_destroy: true,
                                   reject_if: proc { |attributes| attributes['furmaterial'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['furmanufacture'].blank? },
-                                allow_destroy: true
+                                  reject_if: proc { |attributes| attributes['furmanufacture'].blank? },
+                                allow_destroy: true,
                                   reject_if: proc { |attributes| attributes['furimage'].blank? },
                                 allow_destroy: true,
 
