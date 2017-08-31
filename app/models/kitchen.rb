@@ -1,7 +1,7 @@
 class Kitchen < ActiveRecord::Base
     belongs_to :user
 
-  has_many :foto_kitchens
+  #has_many :foto_kitchens
   has_many :fkitchens
 
 
