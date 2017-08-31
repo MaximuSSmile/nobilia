@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kitchen: MyString
+  description: MyText
+  kitchen_turn: 1
+  user_id: 1
+
+two:
+  kitchen: MyString
+  description: MyText
+  kitchen_turn: 1
+  user_id: 1

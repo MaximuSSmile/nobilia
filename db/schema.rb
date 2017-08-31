@@ -11,7 +11,96 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170622015734) do
+ActiveRecord::Schema.define(version: 20170818100718) do
+
+  create_table "fkitchens", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "turn"
+    t.string   "model"
+    t.text     "material"
+    t.string   "manufacture"
+    t.integer  "kitchen_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "kitimage_file_name"
+    t.string   "kitimage_content_type"
+    t.integer  "kitimage_file_size"
+    t.datetime "kitimage_updated_at"
+  end
+
+  add_index "fkitchens", ["kitchen_id"], name: "index_fkitchens_on_kitchen_id"
+
+  create_table "foto_furniturs", force: :cascade do |t|
+    t.string   "title"
+    t.text     "desckription"
+    t.integer  "turn"
+    t.string   "model"
+    t.text     "material"
+    t.string   "manufacture"
+    t.integer  "furniture_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "foto_furniturs", ["furniture_id"], name: "index_foto_furniturs_on_furniture_id"
+
+  create_table "foto_kitchens", force: :cascade do |t|
+    t.string   "title"
+    t.text     "desckription"
+    t.integer  "turn"
+    t.string   "model"
+    t.text     "material"
+    t.string   "manufacture"
+    t.integer  "kitchen_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+    t.string   "kitimage_file_name"
+    t.string   "kitimage_content_type"
+    t.integer  "kitimage_file_size"
+    t.datetime "kitimage_updated_at"
+  end
+
+  add_index "foto_kitchens", ["kitchen_id"], name: "index_foto_kitchens_on_kitchen_id"
+
+  create_table "furniture_firms", force: :cascade do |t|
+    t.string   "firm"
+    t.text     "description"
+    t.integer  "furniture_firm_turn"
+    t.integer  "user_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  create_table "furnitures", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "furniture_turn"
+    t.integer  "furniture_firm_id"
+    t.integer  "user_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  create_table "furniturfirms", force: :cascade do |t|
+    t.string   "firm"
+    t.text     "desckription"
+    t.integer  "furniturfirmturn"
+    t.integer  "user_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  add_index "furniturfirms", ["user_id"], name: "index_furniturfirms_on_user_id"
+
+  create_table "kitchens", force: :cascade do |t|
+    t.string   "kitchen"
+    t.text     "description"
+    t.integer  "kitchen_turn"
+    t.integer  "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "kitchensions", force: :cascade do |t|
     t.string   "kit"

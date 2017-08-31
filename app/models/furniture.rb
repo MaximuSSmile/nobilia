@@ -1,22 +1,10 @@
-class Poimage < ActiveRecord::Base
-  belongs_to :portfolio
-
-    	has_attached_file :pimg, styles: { :medium => "600x400#", # :smale => "600x400>",
-    	 :hard => "2400x1200#" }
-	validates_attachment_content_type :pimg, content_type: /\Aimage\/.*\Z/
-end
-
-
-class Fotofurnitur < ActiveRecord::Base
-  belongs_to :furnitur
-
-    has_attached_file :furimage, styles: { :medium => "600x400#", # :smale => "600x400>",
-    	 :hard => "2400x1200#" }
-	validates_attachment_content_type :furimage, content_type: /\Aimage\/.*\Z/
-end
-
+class Furniture < ActiveRecord::Base
+	    belongs_to :user
 
   has_many :foto_furniturs
+
+
+
 
 
   accepts_nested_attributes_for :foto_furnitur,
@@ -42,3 +30,4 @@ end
 
   has_attached_file :image, styles: { :medium => "600x400#", :hard => "2400x1200#" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
+end

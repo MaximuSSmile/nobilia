@@ -7,14 +7,14 @@
 
   %div.textmain1
     %h3 MЕБЕЛЬ ОТ САЛОНА IMPERIA 
-    %h3 !!!!!!!РАЗДЕЛ В РАЗРАБОТКЕ!!!!!!! 
+    %h3{:style => "display: none"} !!!!!!!РАЗДЕЛ В РАЗРАБОТКЕ!!!!!!! 
 
   %div.linia
     %hr{:size => "3"}/ 
   .firstdesignmain
     %h2 Мебель от производителя W.Schilling
 
-    .firstfotodesignmain
+    .firstfotodesignmain{:style => "display: none"}
       .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9"}
         
         = image_tag( 'furn/Schilling (2).jpg', :class => 'salon' )
@@ -32,7 +32,7 @@
     %hr{:size => "3"}/ 
   .firstdesignmain
     %h2 Мебель от производителя Musterring
-    %div.maincoloms
+    %div.maincoloms{:style => "display: none"}
       .comteiner-fluid
         .row
           .col-xs-4
@@ -94,6 +94,7 @@
                 = image_tag( 'furn/Mustrringeat (4).jpg', :class => 'salon' )
                 = image_tag( 'furn/Mustrringeat (5).jpg', :class => 'salon' )
                 = image_tag( 'furn/Mustrringeat (6).jpg', :class => 'salon' )
+    
 
 
   %div.linia
@@ -101,7 +102,7 @@
   .firstdesignmain
     %h2 Мебель от производителя Mobitec
 
-    .firstfotodesignmain
+    .firstfotodesignmain{:style => "display: none"}
       .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9",}
         = image_tag( 'furn/mobitec (1).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (2).jpg', :class => 'salon' )

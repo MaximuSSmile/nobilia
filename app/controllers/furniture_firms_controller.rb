@@ -1,0 +1,2 @@
+class FurnitureFirmsController < ApplicationController
+end

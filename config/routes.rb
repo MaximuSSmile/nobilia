@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   devise_for :users
  resources :portfolios
  resources :furniturs
+ resources :furnitur_firms
+ resources :kitchens
 
 
   get 'team/teammates'
 
-root 'home#main'
+    root 'home#main'
 
   get 'home/main'
 

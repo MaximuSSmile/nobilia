@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firm: MyString
+  description: MyText
+  furniture_firm_turn: 1
+  user_id: 1
+
+two:
+  firm: MyString
+  description: MyText
+  furniture_firm_turn: 1
+  user_id: 1
