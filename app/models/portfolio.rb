@@ -9,17 +9,17 @@ class Portfolio < ActiveRecord::Base
 
 
 	accepts_nested_attributes_for :kitchensions,
-  															reject_if: proc { |attributes| attributes['kit'].blank? },
+  															reject_if:proc { |attributes| attributes['kit'].blank? },
   															allow_destroy: true
 
  	accepts_nested_attributes_for :technitions,
-  															reject_if: proc { |attributes| attributes['tech'].blank? },
+  															reject_if:proc { |attributes| attributes['tech'].blank? },
   															allow_destroy: true
 
  	accepts_nested_attributes_for :poimages,
-  															reject_if: proc { |attributes| attributes['imgnum'].blank? },
+  															reject_if:proc { |attributes| attributes['imgnum'].blank? },
   															allow_destroy: true,
-  															reject_if: proc { |attributes| attributes['pimg'].blank? },
+  															reject_if:proc { |attributes| attributes['pimg'].blank? },
   															allow_destroy: true
 
 

@@ -9,19 +9,19 @@ class Kitchen < ActiveRecord::Base
 
 
   accepts_nested_attributes_for :fkitchens,
-                                reject_if: proc { |attributes| attributes['title'].blank? },
+                                reject_if:proc { |attributes| attributes['title'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['description'].blank? },
+                                reject_if:proc { |attributes| attributes['description'].blank? },
                                 allow_destroy: true,
-                                  reject_if: proc { |attributes| attributes['turn'].blank? },
+                                  reject_if:proc { |attributes| attributes['turn'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['model'].blank? },
+                                reject_if:proc { |attributes| attributes['model'].blank? },
                                 allow_destroy: true,
-                                  reject_if: proc { |attributes| attributes['material'].blank? },
+                                  reject_if:proc { |attributes| attributes['material'].blank? },
                                 allow_destroy: true,
-                                reject_if: proc { |attributes| attributes['manufacture'].blank? },
+                                reject_if:proc { |attributes| attributes['manufacture'].blank? },
                                 allow_destroy: true,
-                                  reject_if: proc { |attributes| attributes['kitimage'].blank? },
+                                  reject_if:proc { |attributes| attributes['kitimage'].blank? },
                                 allow_destroy: true
 
   #title:string desckription:text turn:integer model:string material:text manufacture:string
