@@ -102,7 +102,7 @@
   .firstdesignmain
     %h2 Мебель от производителя Mobitec
     
-    .firstfotodesignmain
+    .firstfotodesignmain{:style => "display: none"}
       .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "left",}
         = image_tag( 'furn/mobitec (1).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (2).jpg', :class => 'salon' )
@@ -131,7 +131,7 @@
         = image_tag( 'Lattoflex3.png', :class => 'salon' )
         = image_tag( 'Lattoflex4.png', :class => 'salon' )
     %div{:style => "width: 49%; display: inline-block;"} 
-      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315px",  :src => "https://www.youtube.com/embed/iGVcs5nl060?showinfo=0", :width => "100%"}
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/iGVcs5nl060?rel=0&showinfo=0", :width => "100%"}
 
 
 
