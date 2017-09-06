@@ -101,10 +101,9 @@
     %hr{:size => "3"}/ 
   .firstdesignmain
     %h2 Мебель от производителя Mobitec
-    %h2 Мебель от производителя Latoflex
-
-    .firstfotodesignmain{:style => "display: none"}
-      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9",}
+    
+    .firstfotodesignmain
+      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "left",}
         = image_tag( 'furn/mobitec (1).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (2).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (3).jpg', :class => 'salon' )
@@ -119,6 +118,22 @@
         = image_tag( 'furn/mobitec (12).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (13).jpg', :class => 'salon' )
         = image_tag( 'furn/mobitec (14).jpg', :class => 'salon' )
+        Lattoflex1.png
+  %div.linia
+    %hr{:size => "3"}/ 
+  .firstfotodesignmain
+    %h2 Матраси и Ламели от производителя Lattoflex
+
+    %div{:style => "width: 49%; display: inline-block;"}
+      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9",}
+        = image_tag( 'Lattoflex1.png', :class => 'salon' )
+        = image_tag( 'Lattoflex2.png', :class => 'salon' )
+        = image_tag( 'Lattoflex3.png', :class => 'salon' )
+        = image_tag( 'Lattoflex4.png', :class => 'salon' )
+    %div{:style => "width: 49%; display: inline-block;"} 
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315px",  :src => "https://www.youtube.com/embed/iGVcs5nl060?showinfo=0", :width => "100%"}
+
+
 
 
 = render "layouts/bottomnavigation"
