@@ -1,0 +1,14 @@
+.main_content
+  #recipe_top.row
+    .col-md-8
+      #recipe_info
+        %h1= @kitchen.kitchen
+        %p.description= @kitchen.description
+
+.portfolio_show_sixth_block
+  .project_foto
+    .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "2/1", "data-width" => "100%"}
+      - @kitchen.fkitchens.each do |pp|
+        = image_tag pp.kitimage.url(:hard), class: "salon"
+
+= link_to "Delete", kitchen_path, method: :delete, data: {confirm: "Are you sure?" }, class: "btn btn-default"

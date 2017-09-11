@@ -1,0 +1,31 @@
+= simple_form_for @kitchen, html: { multipart: true } do |f|
+  - if @kitchen.errors.any?
+    #errors
+      %p
+        = @kitchen.errors.count
+        Prevented this kitchen froms saving
+      %ul
+        - @kitchen.errors.full_messages.each do |msg|
+          %li= msg
+  .panel-body
+    = f.input :kitchen, input_html: { class: 'form-control' }
+    = f.input :description, input_html: { class: 'form-control' }
+    = f.input :kitchen_turn, input_html: { class: 'form-control' }
+
+
+    .col-md-6
+      %h3 fotos
+      #ingredients
+        = f.simple_fields_for :fkitchens do |fkitchen|
+          = render 'kitifoto_fields', f: fkitchen
+        .links
+          = link_to_add_association 'Добавить изображение ', f, :fkitchens, :partial => 'kitchens/kitifoto_fields', class: "btn btn-default add-button"
+    /
+    /  #directions
+    /    = f.simple_fields_for :poimages do |poi|
+    /      = render 'poimage_fields', f: poi
+    /    .links
+    /      = link_to_add_association 'Добавить изображение ', f, :poimages, class: "btn btn-default add-button"
+
+
+  = f.button :submit, class: "btn btn-primary"

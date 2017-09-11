@@ -11,4 +11,5 @@ class User < ActiveRecord::Base
   has_many :mini_backgrounds
   has_many :portfolio_fotos
   has_many :kitchen_categories
+  #has_many :discounts
 end

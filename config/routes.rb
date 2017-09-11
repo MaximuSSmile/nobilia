@@ -7,7 +7,7 @@ Rails.application.routes.draw do
  resources :furniturs
  resources :furnitur_firms
  resources :kitchens
-
+ resources :discounts
 
   get 'team/teammates'
 

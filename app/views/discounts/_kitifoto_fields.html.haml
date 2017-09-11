@@ -1,0 +1,12 @@
+.form-inline.clearfix
+  .nested-fields
+    = f.input :title, input_html: { class: 'form-input form-control' }
+    = f.input :description, input_html: { class: 'form-input form-control' }
+    = f.input :turn, input_html: { class: 'form-input form-control' }
+    = f.input :model, input_html: { class: 'form-input form-control' }
+    = f.input :material, input_html: { class: 'form-input form-control' }
+    = f.input :manufacture, input_html: { class: 'form-input form-control' }
+    = f.input :kitimage, input_html: { class: 'form-input form-control' }
+
+    = link_to_remove_association "Remove Step", f, class: "btn btn-default form-button"
+
