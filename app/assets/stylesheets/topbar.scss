@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+$logo-red: #f20a0f;
+
+
+.test_block_for_color {
+	height: 500px;
+	width: 100%;
+
+}
+
+.i_bar {
+	  background-color: #383838;
+	  background-color: transparent;
+      -moz-osx-font-smoothing: grayscale;
+	  -webkit-font-smoothing: antialiased;
+
+
+	position: absolute;
+	  top: 0px;
+
+	width: 100%;
+	  min-width: 641px;
+	height: 70px;
+
+
+
+  
+
+
+
+  z-index: 1000;
+	/*background-color: rgba(56, 56, 56, 0.46)*/;
+}
+
+.i_bar_left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	width: 660px;
+	height: 70px;
+
+	padding-left: 10px;
+
+	transition: 0.5s;
+
+}
+							.bar-buttons {
+							    display: inline-block;
+							    float: left;
+
+								width: 120px;
+								height: 70px;
+
+								    font-family: 'Arimo', sans-serif;
+								    /*font-family: "Helvetica Neue","Arial","sans-serif";*/
+								    font-size: 20px;
+								    text-transform: uppercase;
+								    text-align: center;
+								    text-decoration: none;
+								    letter-spacing: 1px;
+								    font-weight: bold;
+								    font-style: normal;
+								    
+								    color: #fff;
+								    transition: .5s;
+							    
+							    padding: 10px 5px;
+							    padding-top: 20px;
+							    margin: auto 10px;
+
+							    
+							}
+
+							.bar-buttons-active {	
+								background-color: white;
+								text-decoration: none;
+								transition: .7s;
+								border-left: 5px solid #f20a0f;
+								border-right: 5px solid #f20a0f;
+							}
+
+							.bar-buttons-hover {	
+								text-decoration: none;
+						        color: $logo-red;
+								transition: .7s;
+								background-color: white;
+								border-left: 5px solid #f20a0f;
+								border-right: 5px solid #f20a0f;
+							}
+
+							a.active {
+							    color: $logo-red;
+								transition: .7s;
+							}
+
+
+	.kyhni_butn	{
+	}
+
+	.kyhni_butn a{
+		@extend .bar-buttons;
+		width: 140px;
+		transition: .5s;
+
+	}
+		.kyhni_butn a span{
+
+		font-size: 20px;
+		transition: .5s;
+		}
+
+	.kyhni_butn a:hover{
+		@extend .bar-buttons-hover;
+		padding: 10px;
+		padding-top: 5px;
+		
+
+	}
+	.kyhni_butn a.active {
+		@extend .bar-buttons-active;
+		padding: 10px;
+		padding-top: 5px;
+		
+
+	}
+		.nobili_logo_bar {
+			opacity: 0;
+			width: 100px;
+			height: 0px;
+			transition: .5s;
+			
+
+		}
+			.kyhni_butn a:hover .nobili_logo_bar {
+			opacity: 1;
+			width: 100px;
+			height: 20px;
+			transition: .5s;
+
+			}
+
+			.kyhni_butn a.active .nobili_logo_bar {
+			opacity: 1;
+			width: 100px;
+			height: 20px;
+			transition: .5s;
+
+			}
+
+
+			.kyhni_butn a:hover span {
+			font-size: 15px;
+			text-align: left;
+			transition: .5s;
+			}
+
+			.kyhni_butn a.active span {
+			font-size: 15px;
+			
+			transition: .5s;
+			}
+
+
+
+
+
+
+					.mebli_butn{
+						
+					}
+
+					.mebli_butn a{
+						@extend .bar-buttons;
+						width: 130px;
+					}
+
+					.mebli_butn a:hover{
+						@extend .bar-buttons-hover;
+						font-size: 18px;
+
+					}
+					.mebli_butn a.active {
+						@extend .bar-buttons-active;
+						font-size: 18px;
+					}
+
+		.portfolio_butn{
+			
+		}
+		.portfolio_butn a{
+			@extend .bar-buttons;
+			width: 170px;
+
+		}
+
+		.portfolio_butn a:hover{
+			@extend .bar-buttons-hover;
+			font-size: 18px;
+
+		}
+		.portfolio_butn a.active {
+			@extend .bar-buttons-active;
+			font-size: 18px;
+		}
+
+
+				.salon_butn{
+					
+				}
+				.salon_butn a{
+					@extend .bar-buttons
+				}
+
+				.salon_butn a:hover{
+					@extend .bar-buttons-hover
+
+				}
+				.salon_butn a.active {
+					@extend .bar-buttons-active
+				}
+
+
+
+
+
+
+
+
+
+.i_bar_right {
+	position: absolute;
+	right: 0px;
+	
+	width: 380px;
+	height: 70px;
+
+	padding-right: 60px;
+
+	transition: 0.7s all;
+
+}	
+
+
+	.i_logo {
+		position: absolute;
+		right: 80px;
+			width: 300px;
+			height: 100%;
+		transition: 0.7s all;
+	
+	}
+
+	.i_logo a {
+		display: block;
+			width: 300px;
+			height: 70px;
+				border-bottom: 0px solid #f20a0f;
+				border-top: 0px solid #f20a0f;
+		transition: 0.7s all;
+	}
+
+			.i_logo a:hover {
+				border-bottom: 5px solid #f20a0f;
+				border-top: 5px solid #f20a0f;
+				border-radius: 1px;
+				background: white;
+				transition: 0.7s all;
+			}	
+
+			.i_logo a:hover .imperia_logo{
+				height: 60px;
+				transition: 0.7s all;
+			}
+				.imperia_logo {
+					width: 300px;
+					height: 70px;
+					padding: 0px 10px;
+					transition: 0.7s all;
+				}
+
+			.i_logo a.active {
+				border-bottom: 5px solid #f20a0f;
+				border-top: 5px solid #f20a0f;
+				border-radius: 1px;
+				background: white;
+				transition: 0.7s all;
+			}	
+
+				.i_logo a.active .imperia_logo{
+				height: 60px;
+				transition: 0.7s all;
+			}
+/*
+.i_barright:hover {
+	width: 500px;
+	background-color: rgba(56, 56, 56, 0.76);
+}
+.i_barright:hover .i_logo{
+	width: 500px;
+	right: 60px;
+	left: 0px; 
+	transition: 0.5s;
+}
+
+*/
+
+	/* button x */
+	.i_mini_bar {
+		position: absolute;
+		right: 10px;	
+	}
+		.i_mini_bar :hover {
+			background-color: white;
+			transition: 0.7s;
+		}
+
+		
+
+	#nav-toggle {
+		position: relative; 
+		display: inline-block; 
+		width:60px; 
+		height:70px;
+	}
+	#nav-toggle span { 
+		position: absolute; 
+		top: 22px;
+	    margin: 10px 5px;
+	}
+
+	#nav-toggle span, 
+	#nav-toggle span:before,
+	#nav-toggle span:after {
+	  position: absolute;
+	  display: block;
+	  content: '';
+	    height: 7px;
+	    width: 50px;
+	  background: #f20a0f;
+	  border-radius: 1px;
+	  cursor: pointer;
+	}
+	#nav-toggle span:before {
+	  top: -14px;
+	}
+	#nav-toggle span:after {
+	  bottom: -14px; 
+	}
+
+	/* Добавим анимацию всех свойств для блоков нашей иконки */
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  transition: all 500ms ease-in-out;
+	}
+
+
+
+
+	/* активное состояние, т.е. меню открыто */
+	#nav-toggle.active {
+	  background-color: white;
+	}
+
+	#nav-toggle.active span {
+	  -webkit-transform: rotate(90deg);
+	 -ms-transform: rotate(90deg);
+	 transform: rotate(90deg);
+	}
+
+	#nav-toggle.active span::before,
+	#nav-toggle.active span::after {
+	  width: 50%;
+	}
+
+	#nav-toggle.active span::before {
+	  top: 0;
+	  -webkit-transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	 -ms-transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	 transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	}
+
+	#nav-toggle.active span::after {
+	  bottom: 0;
+	  -webkit-transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	 -ms-transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	 transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	}
+

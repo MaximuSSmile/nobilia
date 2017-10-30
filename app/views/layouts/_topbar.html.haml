@@ -1,0 +1,24 @@
+
+%div.i_bar
+  %div.i_bar_left
+    %div.kyhni_butn
+      = link_to kitchens_path, :class => kitchens_class?(kitchens_path) do
+        %span Кухни
+        \#{image_tag( 'nobilia_logo.gif', :class => 'nobili_logo_bar', :title => "ГЛАВНАЯ" )}
+    %div.mebli_butn
+      = link_to "мебель", furniturs_path, :class => furniturs_class?(furniturs_path)
+    %div.portfolio_butn
+      = link_to "Портфолио", portfolios_path, :class => portfolios_class?(portfolios_path)
+    %div.salon_butn
+      = link_to "САЛОН", home_contacts_path, :class => contacts_class?(home_contacts_path)
+      
+
+
+  %div.i_bar_right
+    %div.i_logo
+      = link_to image_tag( 'imperia_logo.svg', :class => 'imperia_logo', :title => "ГЛАВНАЯ" ), home_main_path, :class => main_class?(home_main_path)
+    %div.i_mini_bar
+      %div#nav-toggle
+        %span
+
+

@@ -16,3 +16,12 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require fotorama
+
+
+
+
+$(document).ready(function(){
+    $('#nav-toggle').click(function(){
+        $(this).toggleClass('active');
+    });
+});
