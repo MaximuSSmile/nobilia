@@ -5,3 +5,89 @@
         .kitchen
           .image_wrapper
           %h2= link_to kitchen.kitchen, kitchen
+
+
+.white_margin_top
+  %div.whitebloks
+    %div.firstmain
+      %h3 Салон IMPERIA разрабатывает индивидуальные проекты кухонь производства немецких фабрик Nobilia, Bauformat, Beeck Kuchen.
+    
+
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни в современном стиле
+      .comteiner-fluid
+        .row
+          .col-md-12
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функциональность. Эстетика упрощена до минимализма. 
+              %p Современная кухня создана для перфекционистов.
+      .firstfotodesignmain
+        .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
+          = image_tag( 'sv1.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'castella.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'sv2.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'sv3.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'sv4.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'sv5.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'sv7.jpg', :class => 'mainbodyfoto' )
+          
+
+
+
+
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни в традиционном стиле
+
+      .comteiner-fluid
+        .row
+          .col-md-12
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Традиционный стиль — это классика в новом прочтении, живая и жизнерадостная. Здесь в разумной пропорции сочетаются элегантность и скромность, а интересные мелочи подчеркивают индивидуальность. 
+              %p Тот кто любит себя баловать, не останется равнодушным.
+      .firstfotodesignmain
+        .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
+          = image_tag( 'kl1.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'kl3.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'kl8.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'kl9.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'kl10.jpg', :class => 'mainbodyfoto' )
+        
+
+    %div.linia
+      %hr{:size => "3"}/ 
+    .firstdesignmain
+      %h2 Кухни без ручек
+      .comteiner-fluid
+        .row
+          .col-md-12
+            .symbol{:style => "margin-top: 15px;"}
+              .glyphicon.glyphicon-heart-empty
+            #quotation
+              %p Кухня без ручек — компромисс между декоративностью и строгостью. Ее маленький секрет — скрытая система доводчиков. В дизайне нет жестких правил, доступны любые цвета и материалы. Спокойные, гладкие кухонные фронты контрастных оттенков создают современный и в то же время уютный образ. 
+      .firstfotodesignmain
+        .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
+          = image_tag( 'wr1.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'wr2.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'wr3.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'wr4.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'wr5.jpg', :class => 'mainbodyfoto' )
+          = image_tag( 'wr6.jpg', :class => 'mainbodyfoto' )
+
+
+.portfoliopickturemain
+  .portfolipick
+    = image_tag( 'mainbodyfotoBIG.jpg', :class => 'mainbodyportfolio' )
+  .greyfonportfoliomain
+  .linkfonportfoliomain
+    .linkblock
+      = link_to "РЕАЛИЗОВАННЫЕ ПРОЕКТЫ", portfolios_path  
+
+= render "layouts/bottomnavigation"

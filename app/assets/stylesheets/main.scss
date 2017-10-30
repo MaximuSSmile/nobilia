@@ -183,7 +183,40 @@
 
 
 
+		.tehno_3d {
+			width: 100%;
+			height: auto;
+			margin: 10px auto;
+			perspective: 1000px;
+		}
+				.tehno_3d:hover .rotate_tehno {
+					transform: rotateY(180deg);
+				}
 
+			.rotate_tehno {
+				position: relative;
+				transition: .5s;
+				transform-style: preserve-3d;
+			}
+
+			.tehno_text_rotate_k {
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotateY(180deg)
+			}
+
+			.tehno_img_rotate_k {
+				vertical-align: middle;
+			}
+
+			.tehno_img_rotate_k, .tehno_text_rotate_k{
+				border: 4px double #ccc;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				backface-visibility: hidden;
+			}
 
 .secondmain > h3 {
 
@@ -228,6 +261,17 @@
 				}
 
 
+
+
+
+
+
+
+
+
+
+
+
 .textmain1 {
 	margin: 5px auto;
  	padding: 0px 15px;
@@ -268,6 +312,52 @@
 	.firstfotodesignmain {
 		margin-bottom: 20px;
 	}
+
+
+
+.kitchen_3d {
+	width: 500px;
+	height: 300px;
+	margin: 50px auto;
+	perspective: 1000px;
+}
+	.kitchen_3d:hover .rotate_kitchen {
+		transform: rotateY(180deg);
+	}
+
+.rotate_kitchen {
+	position: relative;
+	transition: .5s;
+	transform-style: preserve-3d;
+
+}
+
+.text_rotate_k {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg)
+
+}
+
+.img_rotate_k {
+	vertical-align: middle;
+}
+
+.img_rotate_k, .text_rotate_k{
+	border: 4px double #ccc;
+	width: 500px;
+	height: 300px;
+	background: #fff;
+	backface-visibility: hidden;
+}
+
+
+
+
+
+
+
 
 
 

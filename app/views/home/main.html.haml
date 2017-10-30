@@ -23,100 +23,168 @@
       %div.maincoloms
         .comteiner-fluid
           .row
-            .col-md-4
-              = image_tag( 'kach.gif', :class => 'mainbodyfoto' )
-              %h3 Качество
-              %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
-            .col-md-4
-              = image_tag( 'teh1.gif', :class => 'mainbodyfoto' )
-              %h3 Технологии
-              %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
-            .col-md-4
-              .mainbodyfoto
-                .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%"}
-                  = image_tag( 'prefcerf.png', :class => 'mainbodyfoto' )
-                  = image_tag( 'angelcerf.png', :class => 'mainbodyfoto' )
-                  = image_tag( 'goldenes_m_serf.jpg', :class => 'mainbodyfoto' )
-                  = image_tag( 'gs_certification.jpg', :class => 'mainbodyfoto' )
-              %h3 Экология
-              %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC, а так же сертификаты Golden M, знак GS, DER BLAUE ENGEL. 
-    
+            .col-md-3
+              .tehno_3d
+                .rotate_tehno
+                  .tehno_img_rotate_k 
+                    %h3 Качество
+                    = image_tag( 'kach.gif', :class => 'mainbodyfoto' )
+                  .tehno_text_rotate_k
+                    %h3 Качество
+                    %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
+                    .navbut_portfolio
+                      = link_to "Подробнее", kitchens_path
+            .col-md-3
+              .tehno_3d
+                .rotate_tehno
+                  .tehno_img_rotate_k 
+                    %h3 Технологии
+                    = image_tag( 'teh1.gif', :class => 'mainbodyfoto' )
+                  .tehno_text_rotate_k
+                    %h3 Технологии
+                    %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
+                    .navbut_portfolio
+                      = link_to "Подробнее", kitchens_path
+            .col-md-3
+              .tehno_3d
+                .rotate_tehno
+                  .tehno_img_rotate_k 
+                    %h3 Конструктор
+                    .mainbodyfoto
+                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%", "data-arrows" => "false"}
+                        = image_tag( 'kons1.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kons2.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kons3.jpg', :class => 'mainbodyfoto' )
+                  .tehno_text_rotate_k
+                    %h3 Конструктор
+                    %p Nobilia предлагает широкий ассортимент внутренних и рейлинговых систем хранения, встраиваемого освещения. Для комплектации выдвижных ящиков также предлагаются системы хранения «Pantry-Box», электрическая мультирезка, выдвижные корзины для чистящих средств, мусорные системы и т.д.
+            .col-md-3
+              .tehno_3d
+                .rotate_tehno
+                  .tehno_img_rotate_k 
+                    %h3 Экология
+                    .mainbodyfoto
+                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%",  "data-arrows" => "false"}
+                        = image_tag( 'prefcerf.png', :class => 'mainbodyfoto' )
+                        = image_tag( 'angelcerf.png', :class => 'mainbodyfoto' )
+                        = image_tag( 'goldenes_m_serf.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'gs_certification.jpg', :class => 'mainbodyfoto' )
+                  .tehno_text_rotate_k
+                    %h3 Экология
+                    %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC, а так же сертификаты Golden M, знак GS, DER BLAUE ENGEL. 
+
+
     %div.linia
       %hr{:size => "3"}/          
     %div.textmain1
       %h3 IMPERIA поставляет кухни на заказ напрямую от производителей из Германии. У нас собственная служба логистики, команда талантливых дизайнеров и опытных сборщиков.
 
-
-
     
 
-    %div.linia
-      %hr{:size => "3"}/ 
-    .firstdesignmain
-      %h2 Кухни в современном стиле
-      .comteiner-fluid
-        .row
-          .col-md-12
-            .symbol{:style => "margin-top: 15px;"}
-              .glyphicon.glyphicon-heart-empty
-            #quotation
-              %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функциональность. Эстетика упрощена до минимализма. 
-              %p Современная кухня создана для перфекционистов.
-      .firstfotodesignmain
-        .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
-          = image_tag( 'sv1.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'castella.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'sv2.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'sv3.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'sv4.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'sv5.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'sv7.jpg', :class => 'mainbodyfoto' )
-          
 
 
 
 
     %div.linia
       %hr{:size => "3"}/ 
-    .firstdesignmain
-      %h2 Кухни в традиционном стиле
-
+    %div.maincoloms
       .comteiner-fluid
         .row
-          .col-md-12
-            .symbol{:style => "margin-top: 15px;"}
-              .glyphicon.glyphicon-heart-empty
-            #quotation
-              %p Традиционный стиль — это классика в новом прочтении, живая и жизнерадостная. Здесь в разумной пропорции сочетаются элегантность и скромность, а интересные мелочи подчеркивают индивидуальность. 
-              %p Тот кто любит себя баловать, не останется равнодушным.
-      .firstfotodesignmain
-        .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
-          = image_tag( 'kl1.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'kl3.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'kl8.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'kl9.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'kl10.jpg', :class => 'mainbodyfoto' )
-        
+          .col-md-6      
+            .firstdesignmain
+              %h2 Кухни в современном стиле
+              .firstfotodesignmain
+                .kitchen_3d
+                  %div.rotate_kitchen
+                    %div.img_rotate_k
+                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
+                        = image_tag( 'sv1.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'castella.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'sv2.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'sv3.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'sv4.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'sv5.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'sv7.jpg', :class => 'mainbodyfoto' )
+
+                    %div.text_rotate_k
+                      .symbol{:style => "margin-top: 15px;"}
+                        .glyphicon.glyphicon-heart-empty
+                      #quotation
+                      %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функциональность. Эстетика упрощена до минимализма. 
+                      %p Современная кухня создана для перфекционистов.
+                      .port_button
+                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
+
+          .col-md-6      
+            .firstdesignmain
+              %h2 Кухни в традиционном стиле
+              .firstfotodesignmain
+                .kitchen_3d
+                  %div.rotate_kitchen
+                    %div.img_rotate_k
+                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
+                        = image_tag( 'kl1.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kl3.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kl8.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kl9.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kl10.jpg', :class => 'mainbodyfoto' )
+                    %div.text_rotate_k
+                      .symbol{:style => "margin-top: 15px;"}
+                        .glyphicon.glyphicon-heart-empty
+                      #quotation
+                        %p Традиционный стиль — это классика в новом прочтении, живая и жизнерадостная. Здесь в разумной пропорции сочетаются элегантность и скромность, а интересные мелочи подчеркивают индивидуальность. 
+                        %p Тот кто любит себя баловать, не останется равнодушным.
+                      .port_button
+                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
+
 
     %div.linia
       %hr{:size => "3"}/ 
-    .firstdesignmain
-      %h2 Кухни без ручек
+    %div.maincoloms
       .comteiner-fluid
         .row
-          .col-md-12
-            .symbol{:style => "margin-top: 15px;"}
-              .glyphicon.glyphicon-heart-empty
-            #quotation
-              %p Кухня без ручек — компромисс между декоративностью и строгостью. Ее маленький секрет — скрытая система доводчиков. В дизайне нет жестких правил, доступны любые цвета и материалы. Спокойные, гладкие кухонные фронты контрастных оттенков создают современный и в то же время уютный образ. 
-      .firstfotodesignmain
-        .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
-          = image_tag( 'wr1.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'wr2.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'wr3.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'wr4.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'wr5.jpg', :class => 'mainbodyfoto' )
-          = image_tag( 'wr6.jpg', :class => 'mainbodyfoto' )
+          .col-md-6      
+            .firstdesignmain
+              %h2 Кухни без ручек
+              .firstfotodesignmain
+                .kitchen_3d
+                  %div.rotate_kitchen
+                    %div.img_rotate_k
+                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
+                        = image_tag( 'wr1.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'wr2.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'wr3.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'wr4.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'wr5.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'wr6.jpg', :class => 'mainbodyfoto' )
+                    %div.text_rotate_k
+                      .symbol{:style => "margin-top: 15px;"}
+                        .glyphicon.glyphicon-heart-empty
+                      #quotation
+                        %p Кухня без ручек — компромисс между декоративностью и строгостью. Ее маленький секрет — скрытая система доводчиков. В дизайне нет жестких правил, доступны любые цвета и материалы. Спокойные, гладкие кухонные фронты контрастных оттенков создают современный и в то же время уютный образ. 
+                      .port_button
+                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
+          .col-md-6      
+            .firstdesignmain
+              %h2 Кухни "Коттедж"
+              .firstfotodesignmain
+                .kitchen_3d
+                  %div.rotate_kitchen
+                    %div.img_rotate_k
+                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
+                        = image_tag( 'kotedj1.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kotedj2.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kotedj3.jpg', :class => 'mainbodyfoto' )
+                        = image_tag( 'kotedj4.jpg', :class => 'mainbodyfoto' )
+
+                    %div.text_rotate_k
+                      .symbol{:style => "margin-top: 15px;"}
+                        .glyphicon.glyphicon-heart-empty
+                      #quotation
+                        %p Кухнb выполненs в лучших традициях классического стиля -изысканный декор, элегантная кухонная фурнитура, выдержанные пропорции. 
+                      .port_button
+                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
+
 
 
 
