@@ -37,6 +37,10 @@ gem "active_link_to"
 gem "fotoramajs"
 gem 'mail_form', '~> 1.6'
 
+########## SLIDER
+gem 'jquery-slick-rails', '~> 1.8', '>= 1.8.1'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
