@@ -21,7 +21,7 @@ $logo-red: #f20a0f;
 
 	width: 100%;
 	  min-width: 641px;
-	height: 70px;
+	height: 60px;
 	border-bottom: 4px solid #f20a0f;
 
 
@@ -40,7 +40,7 @@ $logo-red: #f20a0f;
 	top: 0;
 	
 	width: 660px;
-	height: 70px;
+	height: 60px;
 
 	padding-left: 10px;
 
@@ -52,7 +52,7 @@ $logo-red: #f20a0f;
 							    float: left;
 
 								width: 120px;
-								height: 70px;
+								height: 60px;
 
 								    font-family: 'Arimo', sans-serif;
 								    /*font-family: "Helvetica Neue","Arial","sans-serif";*/
@@ -68,7 +68,7 @@ $logo-red: #f20a0f;
 								    transition: .5s;
 							    
 							    padding: 10px 5px;
-							    padding-top: 20px;
+							    padding-top: 15px;
 							    margin: auto 10px;
 
 							    
@@ -78,8 +78,8 @@ $logo-red: #f20a0f;
 								background-color: white;
 								text-decoration: none;
 								transition: .7s;
-								border-left: 5px solid #f20a0f;
-								border-right: 5px solid #f20a0f;
+								border-left: 4px solid #f20a0f;
+								border-right: 4px solid #f20a0f;
 							}
 
 							.bar-buttons-hover {	
@@ -87,8 +87,8 @@ $logo-red: #f20a0f;
 						        color: $logo-red;
 								transition: .7s;
 								background-color: white;
-								border-left: 5px solid #f20a0f;
-								border-right: 5px solid #f20a0f;
+								border-left: 4px solid #f20a0f;
+								border-right: 4px solid #f20a0f;
 							}
 
 							a.active {
@@ -115,14 +115,14 @@ $logo-red: #f20a0f;
 	.kyhni_butn a:hover{
 		@extend .bar-buttons-hover;
 		padding: 10px;
-		padding-top: 5px;
+		padding-top: 0px;
 		
 
 	}
 	.kyhni_butn a.active {
 		@extend .bar-buttons-active;
 		padding: 10px;
-		padding-top: 5px;
+		padding-top: 0px;
 		
 
 	}
@@ -135,6 +135,8 @@ $logo-red: #f20a0f;
 
 		}
 			.kyhni_butn a:hover .nobili_logo_bar {
+				position: relative;
+				top: -3px;
 			opacity: 1;
 			width: 100px;
 			height: 20px;
@@ -143,6 +145,8 @@ $logo-red: #f20a0f;
 			}
 
 			.kyhni_butn a.active .nobili_logo_bar {
+				position: relative;
+				top: -3px;
 			opacity: 1;
 			width: 100px;
 			height: 20px;
@@ -211,15 +215,17 @@ $logo-red: #f20a0f;
 					
 				}
 				.salon_butn a{
-					@extend .bar-buttons
+					@extend .bar-buttons;	
 				}
 
 				.salon_butn a:hover{
-					@extend .bar-buttons-hover
+					@extend .bar-buttons-hover;
+					font-size: 18px;
 
 				}
 				.salon_butn a.active {
-					@extend .bar-buttons-active
+					@extend .bar-buttons-active;
+					font-size: 18px;
 				}
 
 
@@ -235,7 +241,7 @@ $logo-red: #f20a0f;
 	right: 0px;
 	
 	width: 380px;
-	height: 70px;
+	height: 60px;
 
 	padding-right: 60px;
 
@@ -256,7 +262,7 @@ $logo-red: #f20a0f;
 	.i_logo a {
 		display: block;
 			width: 300px;
-			height: 70px;
+			height: 60px;
 				border-bottom: 0px solid #f20a0f;
 				border-top: 0px solid #f20a0f;
 		transition: 0.7s all;
@@ -271,26 +277,26 @@ $logo-red: #f20a0f;
 			}	
 
 			.i_logo a:hover .imperia_logo{
-				height: 60px;
+				height: 50px;
 				transition: 0.7s all;
 			}
 				.imperia_logo {
 					width: 300px;
-					height: 70px;
+					height: 60px;
 					padding: 0px 10px;
 					transition: 0.7s all;
 				}
 
 			.i_logo a.active {
-				border-bottom: 5px solid #f20a0f;
-				border-top: 5px solid #f20a0f;
+				border-bottom: 4px solid #f20a0f;
+				border-top: 4px solid #f20a0f;
 				border-radius: 1px;
 				background: white;
 				transition: 0.7s all;
 			}	
 
 				.i_logo a.active .imperia_logo{
-				height: 60px;
+				height: 52px;
 				transition: 0.7s all;
 			}
 /*
@@ -315,7 +321,9 @@ $logo-red: #f20a0f;
 		.i_mini_bar :hover {
 			background-color: white;
 			transition: 0.7s;
+
 		}
+
 
 		
 
@@ -323,12 +331,25 @@ $logo-red: #f20a0f;
 		position: relative; 
 		display: inline-block; 
 		width:60px; 
-		height:70px;
+		height:60px;
+				background-color: none;
+				border-left: 0px solid #f20a0f;
+				border-right: 0px solid #f20a0f;
+				transition: 0.7s;
+		
 	}
+
+
+
+
+
+
 	#nav-toggle span { 
 		position: absolute; 
-		top: 22px;
+		top: 17px;
 	    margin: 10px 5px;
+
+
 	}
 
 	#nav-toggle span, 
@@ -359,14 +380,30 @@ $logo-red: #f20a0f;
 
 
 	/* активное состояние, т.е. меню открыто */
+
+	#nav-toggle:hover {
+	  background-color: white;
+	    	  	border-left: 4px solid #f20a0f;
+				border-right: 4px solid #f20a0f;
+				width: 68px;
+				transition: 0.7s;
+
+	}
+
+
 	#nav-toggle.active {
 	  background-color: white;
+	    	  	border-left: 4px solid #f20a0f;
+				border-right: 4px solid #f20a0f;
+				width: 68px;
+
 	}
 
 	#nav-toggle.active span {
 	  -webkit-transform: rotate(90deg);
 	 -ms-transform: rotate(90deg);
 	 transform: rotate(90deg);
+
 	}
 
 	#nav-toggle.active span::before,
