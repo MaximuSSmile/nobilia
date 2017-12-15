@@ -88,7 +88,7 @@ Rails.application.configure do
       }
     }
 
-  config.action_mailer.default_url_option = { host: 'www.nobilia.com.ua.herokudns.com'}
+  config.action_mailer.default_url_option = { host: 'https://nobilia.herokuapp.com'}
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
