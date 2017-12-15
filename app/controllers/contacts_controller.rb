@@ -1,11 +1,11 @@
 class ContactsController < ApplicationController
 
 	def new
-		@contact = Conract.new
+		@contact = Contact.new
 	end
 
 	def create
-		@contact = Conract,new(params[:contact])
+		@contact = Contact.new(params[:contact])
 		@contact.request = request
 		if @contact.deliver
 			flash.now[:error] = nil
