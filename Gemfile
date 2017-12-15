@@ -35,7 +35,10 @@ gem 'devise', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
 gem "active_link_to"
 gem "fotoramajs"
+
+########## mailer
 gem 'mail_form', '~> 1.6'
+gem 'sendgrid-ruby'
 
 ########## SLIDER
 gem 'jquery-slick-rails', '~> 1.8', '>= 1.8.1'
