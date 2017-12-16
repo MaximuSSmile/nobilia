@@ -21,10 +21,11 @@
   %br/
   = f.text_area :message, as: :text, :class => "ColorContactForm"
   %br/
-  /= f.label "Ваш контактный номер телефона:"
-  /%br/
-  /= f.text_area :phonenumber, as: :text, :class => "ColorContactForm"
-  /%br/
+  
+  = f.label "Ваш контактный номер телефона:"
+  %br/
+  = f.text_area :phonenumber, as: :text, :class => "ColorContactForm"
+  %br/
 
   .hidden
     = f.label :nickname
