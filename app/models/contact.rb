@@ -2,7 +2,7 @@
 
 
 class Contact < MailForm::Base
-  attribute :name, subject: => "Имя Клиента",     :validate => true
+  attribute :name,     :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
   attribute :phonenumber,   :validate => true
@@ -14,7 +14,8 @@ class Contact < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "My Contact Form",
+      :subject => "Желаю Кухню NOBILIA",
+      :name => "Имя Клиента"
       #:to => "nobilia.odessa@gmail.com",
       :to => "klerikmaxxx@gmail.com",
       :from => %("#{name}" <#{email}>)
