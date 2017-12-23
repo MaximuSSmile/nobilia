@@ -31,7 +31,7 @@ module ApplicationHelper
     return 'active' if request.path == test_path
     ''
   end
-    def current_class?(test_path)
+    def new_contact_path?(test_path)
     return 'active' if request.path == test_path
     ''
   end
