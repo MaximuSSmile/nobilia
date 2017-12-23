@@ -16,7 +16,7 @@ class Contact < MailForm::Base
     {
       :subject => "#{name}, желаю Кухню NOBILIA",
       #:to => "nobilia.odessa@gmail.com",
-      :to => "klerikmaxxx@gmail.com", 
+      :to => "nobilia.odessa@gmail.com", 
       :from => %("#{name}" <#{email}>)
     }
   end
