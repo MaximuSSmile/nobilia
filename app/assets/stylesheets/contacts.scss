@@ -6,3 +6,382 @@
 .ColorContactForm {
 	color: red;
 }
+
+
+
+
+
+/*   ###############   HEADBLOCKS BEGIN  ############## */ 
+			@keyframes snow {
+			 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+			 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+			}
+			 
+			@-moz-keyframes snow {
+			 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+			 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+			}
+			 
+			@-webkit-keyframes snow {
+			0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+			 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+			}
+			 
+			@-ms-keyframes snow {
+			 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+			 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+			}
+
+
+.contacs_grey60 {
+	width: 100%;
+	height: 60px;
+
+	background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'), url('sn2red.png'), url('sn3red.png'), url('sn1red.png') ;
+	 /*background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'); */
+
+	 /*background-image: url('sn3red.png'), url('sn2red.png'), url('sn1red.png') ; */
+		 -webkit-animation: snow 20s linear infinite;
+		 -moz-animation: snow 20s linear infinite;
+		 -ms-animation: snow 20s linear infinite;
+		 animation: snow 20s linear infinite;
+}
+
+
+.contacs_white30 {
+	width: 100%;
+	height: 30px;
+	background: #fff;
+
+}
+/*   ###############   HEADBLOCKS END  ############## */ 
+
+
+
+
+/*   ###############   HEAD FOTO Block BEGIN  ############## */ 
+.contacs_head_img_block {
+
+	width: 100%;
+	height: 410px;
+	overflow: hidden;
+}
+
+.contacs_head_img {
+	width: 100%;
+	margin-top: -400px;
+	z-index: 10;
+}
+	.contacts_grey_linz{
+		position: absolute;
+		top: 90px;
+		display: block;
+		background-color: rgba(41,41,41,.6);
+		width: 100%;
+		height: 410px; 
+		z-index: 20;
+
+	}
+
+	.contact_head_hi {
+
+		position: absolute;
+	    height: 275px;
+	    top: 90px;
+	    width: 100%;
+	    padding: 0px;
+	    z-index: 30;
+	}
+
+	.contact_head_text {
+		animation: feature-text-anim .75s ease-in-out;
+	    width: 100%;
+	    max-width: 999px;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin: 100px auto 0px;
+	    padding: 55px 32px 0px 32px;
+	    text-align: center;
+	    text-rendering: optimizeLegibility;
+	}
+			.contacts_lozung1 {
+			display: block;
+		    	font-family: "Helvetica Neue","Arial","sans-serif";
+			    font-size: 45px;
+		    	font-weight: 300;
+			    font-style: normal;
+		    	color: #fff;
+		    line-height: .9em;
+		    text-transform: none;
+		    letter-spacing: 0px;
+		   
+		   
+			}
+
+			.contacts_lozung2 {
+			font-family: "Helvetica Neue","Arial","sans-serif";
+		    font-size: 22px;
+		    line-height: 1.4em;
+		    text-transform: uppercase;
+		    letter-spacing: 2px;
+		    font-weight: bold;
+		    font-style: normal;
+		    color: #fff;/*#dbdbdb*/;
+		    margin: 20px auto;
+		}
+/*   ###############   HEAD FOTO BLock END  ############## */ 
+
+
+
+/*   ###############   Слайдер обрасцы кухонь BEGIN  ############## */ 
+.contact_carusel_mode {
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+	height: 140px;
+/*  border-top: 2px solid #f20a0f;
+	border-bottom: 2px solid #f20a0f;
+*/	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+		.contact_carusel_mode img{
+			width: 200px;
+			margin: 0px 5px;
+
+			border-left: 2px solid #f20a0f;
+			border-right: 2px solid #f20a0f;
+			border-top: 2px solid #f20a0f;
+			border-bottom: 2px solid #f20a0f;
+
+		}
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+.contact_numbers{
+	background: white;
+
+	width: 100%;
+	margin: 0 auto;
+
+}
+	.number_and_mail{
+		width: 920px;
+		height: 36px;
+		margin: 0px auto;
+		padding: 5px auto;
+	}
+	.number_and_mail h3{
+		color: black;
+		margin: 0px;
+	}
+
+		.lozundg_text {
+			margin: 0px auto;
+		 	
+		 	padding: 0px 15px;
+		 	padding-bottom: 10px;
+		 	text-align: center;
+
+		}
+
+			.lozundg_text > h1{
+			    
+		    font-size: 42px;
+		    line-height: 1.2em;
+		    text-transform: none;
+		    letter-spacing: 0px;
+		    font-weight: 400;
+		    font-style: normal;
+		    }
+			.lozundg_text > p {
+			margin: 0px;
+			    
+			    font-size: 15px;
+			    line-height: 1.4em;
+			    letter-spacing: 0px;
+			    font-weight: 400;
+			    font-style: normal;
+			    color: #1f1f1f	
+		   }
+
+
+
+
+.contacts_welcome {
+	background: #fff;
+	width: 100%;
+	height: 400px;
+}
+
+
+.content{
+	padding: 25px 32px 0;
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: auto;
+    height: auto;
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f;
+    position: relative;
+    /* margin-top: 225px; */
+   
+}
+/*   ###############   HEAD WELCOME END  ############## */ 
+
+
+
+
+
+/*   ###############   DISCOUNT BEGIN  ############## */ 
+.contact_discount {
+
+	background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'), url('sn2red.png'), url('sn3red.png'), url('sn1red.png') ;
+	 /*background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'); */
+
+	 /*background-image: url('sn3red.png'), url('sn2red.png'), url('sn1red.png') ; */
+		 -webkit-animation: snow 20s linear infinite;
+		 -moz-animation: snow 20s linear infinite;
+		 -ms-animation: snow 20s linear infinite;
+		 animation: snow 20s linear infinite;
+
+	width:100%;
+	height: 175px;
+		margin: 0px auto;
+		padding: 10px auto;
+	border-top: 2px solid #f20a0f;
+	border-bottom: 2px solid #f20a0f;
+}
+
+	.contact_discount h3{
+
+		width: 920px;
+		margin: 5px auto;
+		text-align: center;
+
+	}
+
+	.contact_discount_block {
+		width: 920px;
+		margin: 0px auto;
+		height: auto;
+
+	}
+/*   ###############  DISCOUNT   END  ############## */ 
+
+
+
+
+
+
+
+/*   ###############   HEADBLOCKS BEGIN  ############## */ 
+
+.white_blok_contact {
+	padding: 25px 32px 0;
+	margin: 0 auto;
+	background-color: #ffffff;
+	    width: auto;
+	    height: auto;
+
+    	font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f;
+      position: relative;
+      margin-top: 0px;
+    z-index: 102;
+}
+
+.white_bloks {
+	height: auto;
+  	    width: auto;
+    max-width: 1020px;
+    margin: 0 auto;
+    	text-align: center;
+
+	    font-family: sans-serif;
+
+	padding-bottom: 15px;
+}
+
+
+
+/*   ###############   HEADBLOCKS END  ############## */ 
+
+
+
+
+/*   ###############   ACCORDION   BEGIN  ############## */  
+
+.accordionSlider {
+	max-width: 990px;
+	margin: 0 auto;
+
+}
+
+ul.accordion{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	padding: 0;
+}
+
+ul.accordion li{
+	width: 50px;
+	overflow: hidden;
+	padding: 1px 1px 0;
+	cursor: pointer;
+	display: block;
+	/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
+	/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
+	/*box-shadow: 1px 3px 15px #7e807e;*/
+	-webkit-transition: all 1.5s;
+	-moz-transition: all 1.5s;
+	-ms-transition: all 1.5s;
+	-o-transition: all 1.5s;
+	transition: all 1.5s;
+}
+
+ul.accordion img{
+	width: 300px;
+}
+
+ul.accordion li:hover {
+	width: 300px;
+	-webkit-box-shadow: 0px 0px 7px #f20a0f;
+	-moz-box-shadow: 0px 0px 7px #f20a0f;
+	box-shadow: 0px 0px 7px #f20a0f;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+ul.accordion li:nth-child(4){
+	width: 300px;
+}
+ul.accordion:hover li:nth-child(4){
+	width: 50px;
+}
+ul.accordion li:nth-child(4){
+	width: 300px;
+}
+
+
+/*   ###############   ACCORDION  END  ############## */

@@ -32,22 +32,25 @@ $(document).ready(function(){
 
 
 
+
 $(document).ready(function(){
-  $('.contact-salon-carusel').slick({
+  $('.contact-salon-topcarusel').slick({
   width: 300,
-  	slidesToShow: 4,
-  	autoplay: true,
-	autoplaySpeed: 2000,
-	cssEase: 'linear',
+  arrows: false,
+  
+  autoplay: true,
+    autoplaySpeed: 0,
+    speed: 2500,
+    cssEase: 'linear',
+
     pauseOnFocus: true,
     pauseOnHover: true,
     pauseOnDotsHover: true,
-  slidesToShow: 3,
+  
   dots: true,
   infinite: true,
-  speed: 2000,
-  centerMode: true,
-  variableWidth: true
+
+  variableWidth: true,
 
   });
 });

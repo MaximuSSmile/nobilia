@@ -1,17 +1,71 @@
 
-.graydelivercontact
+%div.contacs_grey60
 
-.headpickturecontact
-  = image_tag( 'contact.jpg', :class => 'contacthead' )
 
-.contlozung
-  .headwords
-    %p#con1 Контакты
-    %p#con2 ОЦЕНИТЕ ОБРАЗЦЫ КУХОНЬ В НАШИХ САЛОНАХ
+%div.contacs_white30
 
-.whiteblokcontact
-  %div.whitebloks
-    %div.firstcontact
+
+%div.contacs_head_img_block
+  = image_tag( 'contact.jpg', :class => 'contacs_head_img' )
+  
+  %div.contacts_grey_linz
+
+  .contact_head_hi
+    .contact_head_text
+      .contacts_lozung1 
+        Контакты салона 
+        %span{:style => "color: #f20a0f; font-weight: 600;"}ИМПЕРИЯ
+      .contacts_lozung2 ОЦЕНИТЕ ОБРАЗЦЫ КУХОНЬ В НАШЕМ САЛОНЕ
+
+%div.contact_carusel_mode
+  .contact-salon-topcarusel
+    %div{:style => "height: 300px"}= image_tag( 'discount/Beeck Kuchen1.jpg' )
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Castello Magnolia1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Finesse Alpine White1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Flash White1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Lux Magnolia1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Touch Grey1.jpg')
+    %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia York Satin Grey1.jpg') 
+
+%div.contact_numbers
+  .number_and_mail
+    %h3 
+      048 784 54 33 
+      %span{:style => "color: #f20a0f"}| 
+      +38 068 704 5433 
+      %span{:style => "color: #f20a0f"}| 
+      +38 050 704 5433 
+      %span{:style => "color: #f20a0f"}|  
+      nobilia.odessa@gmail.com
+
+%div.contact_numbers
+  .lozundg_text
+    %p 
+      Приглашаем Вас в салон, чтобы продемонстрировать качество и красоту немецких кухонь 
+      %span{:style => "color: #f20a0f"} NOBILIA
+    %p Здесь Вы може обсудить с дизайнером планировку кухни и выбрать фасады.
+    %p Дизайнер разработает 3D-проект кухни и рассчитает стоимость ее изготовления.
+
+
+%div.contact_discount
+  %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
+  %div.contact_discount_block
+    = link_to image_tag( 'discount/Beeck Kuchen1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
+    = link_to image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
+    = link_to image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
+    = link_to image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
+
+
+
+/    %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
+/%div.contacts_welcome
+
+
+
+%div.white_blok_contact
+  %div.white_bloks
+    %div.firstcontact{:style => "display: none"}
       %h1 
         Салон 
         ИМПЕРИЯ
@@ -21,16 +75,16 @@
       %p Здесь Вы може обсудить с дизайнером планировку кухни и выбрать фасады.
       %p Дизайнер разработает 3D-проект кухни и рассчитает стоимость ее изготовления.
       %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
-    %div.contactdiscountblock
+    %div.contactdiscountblock{:style => "display: none"}
       = link_to image_tag( 'discount/Beeck Kuchen1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
       = link_to image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
       = link_to image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
       = link_to image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
-    %div.numbercontact
+    %div.numbercontact{:style => "display: none"}
       %h3 048 784 54 33 | +38 068 704 5433 | +38 050 704 5433 |  nobilia.odessa@gmail.com
     %div.secondcontact
       %div.delivercoloms
-        .col-md-12
+        .col-md-12{:style => "display: none"}
           .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "slide"}
             = image_tag( 'discount/Beeck Kuchen1.jpg', :class => 'salon',)
             = image_tag( 'discount/Nobilia Castello Magnolia1.jpg', :class => 'salon',)
@@ -64,6 +118,21 @@
 
     %div.gorod
       %p Если вы живете не в ODESSE, мы готовы работать над проектом удаленно. Наши дизайнеры пришлют каталоги, покажут варианты фасадов и разработают проект. После заключения договора мы приедем к вам на замер.
+
+    %div.linia
+      %hr{:size => "3"}/
+    %div.accordionSlider
+      %ul.accordion
+        %li= image_tag( 'discount/Beeck Kuchen1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia Castello Magnolia1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia Finesse Alpine White1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => '',)
+        %li= image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => '',)
+
+
+
     %div.linia
       %hr{:size => "3"}/
     %div.thirdcontact
