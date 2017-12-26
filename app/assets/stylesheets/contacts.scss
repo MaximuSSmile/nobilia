@@ -284,9 +284,231 @@
 
 
 
+/*   ###############   VIDEO BEGIN  ############## */ 
 
 
-/*   ###############   HEADBLOCKS BEGIN  ############## */ 
+
+
+
+.contacts_video_block{
+	background: #fff;
+
+
+	width: 100%;
+	min-height: 520px;
+	margin: 0px auto;
+	padding: 20px 0px;
+
+	color: black;
+
+	/*border-bottom: 2px solid #f20a0f;
+	*/
+}
+
+		.lozung_adres{
+			display: block;
+			width: 100%;
+			margin: 0px auto;
+
+			text-align: center;
+		}
+
+			.lozung_adres p {
+				text-decoration: underline;
+				text-decoration-color: #f20a0f;
+
+			}
+
+
+	.video_text {
+		display: inline-block;
+		float: left;
+
+		width: 49%;
+		min-height: 390px;
+		padding-right: 25px;
+
+		text-align: right;
+
+	}
+
+
+			.video_text h4{
+				display: block;
+				float: right;
+					border-right: 2px solid #f20a0f;
+					padding-right: 5px;
+				max-width: 600px;
+
+				text-align: right;
+
+			}
+
+	.video_show {
+		display: inline-block;
+		width: 49%;
+
+	}
+			.video_heigth {
+				position: relative;
+			    width: 100%;
+			    height: 0;
+			    padding-bottom: 56.25%;
+			}
+
+			.video_setings {
+
+			    position: absolute;
+
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			}
+
+/*   ###############  VIDEO  END  ############## */ 
+
+
+
+/*   ###############   ACCORDION   BEGIN  ############## */  
+
+.accordionSlider {
+	background: #fff;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 10px 1%;
+
+	border-bottom: 2px solid #f20a0f;
+}
+
+	.accordion_loxung{
+		color: black;
+		text-align: center;
+		padding: 0px 10px;
+	}
+
+		ul.accordion{
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+			padding: 0;
+		}
+
+			ul.accordion li{
+				width: 5vw;
+				overflow: hidden;
+				
+				cursor: pointer;
+				display: block;
+					border-left: 2px solid #f20a0f;
+					border-right: 2px solid #f20a0f;
+				/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
+				/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
+				/*box-shadow: 1px 3px 15px #7e807e;*/
+				-webkit-transition: all 1.5s;
+				-moz-transition: all 1.5s;
+				-ms-transition: all 1.5s;
+				-o-transition: all 1.5s;
+				transition: all 1.5s;
+			}
+
+				ul.accordion li img{
+					width: 68vw;
+				}
+
+			ul.accordion li:hover {
+				width: 68vw;
+
+				-webkit-box-shadow: 0px 0px 7px #f20a0f;
+				-moz-box-shadow: 0px 0px 7px #f20a0f;
+				box-shadow: 0px 0px 7px #f20a0f;
+				-webkit-transition: all 1s;
+				-moz-transition: all 1s;
+				-ms-transition: all 1s;
+				-o-transition: all 1s;
+				transition: all 1s;
+			}
+
+			ul.accordion li:nth-child(4){
+				width: 68vw;
+				
+			}
+			ul.accordion:hover li:nth-child(4){
+				width: 5vw;
+				
+			}
+			ul.accordion li:nth-child(4):hover{
+				width: 68vw;
+				
+			}
+
+/*   ###############   ACCORDION  END  ############## */
+
+
+
+
+
+/*   ###############   MAP BEGIN  ############## */ 
+.contacts_map{
+	
+	background: #fff;
+
+	width: 100%;
+
+	margin: 25px auto;
+
+
+
+	border-top: 2px solid #f20a0f;
+	border-bottom: 2px solid #f20a0f;
+}
+
+
+.lozung_adres_map {
+	color: black;
+	text-align: center;
+}
+
+
+.lozung_adres_map h4{
+	padding: 10px 30px;
+}
+/*   ###############  MAP  END  ############## */ 
+
+
+
+
+
+/*   ###############   ЗАПИСЬ В САЛОН BEGIN  ############## */ 
+
+.appointment{
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	background: #fff;
+
+
+	border-top: 2px solid #f20a0f;
+	border-bottom: 2px solid #f20a0f;
+}
+
+
+.appointment_lozung1 {
+	width: 100%;
+	margin: 0px auto;
+	color: black;
+	text-align: center;
+}
+
+/*   ###############  ЗАПИСЬ В САЛОН END  ############## */ 
+
+
+
+
+
+
+
+/*   ###############   временный BEGIN  ############## */ 
 
 .white_blok_contact {
 	padding: 25px 32px 0;
@@ -321,67 +543,7 @@
 
 
 
-/*   ###############   HEADBLOCKS END  ############## */ 
+/*   ###############   временный END  ############## */ 
 
 
 
-
-/*   ###############   ACCORDION   BEGIN  ############## */  
-
-.accordionSlider {
-	max-width: 990px;
-	margin: 0 auto;
-
-}
-
-ul.accordion{
-	display: flex;
-	justify-content: center;
-	margin-top: 10px;
-	padding: 0;
-}
-
-ul.accordion li{
-	width: 50px;
-	overflow: hidden;
-	padding: 1px 1px 0;
-	cursor: pointer;
-	display: block;
-	/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
-	/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
-	/*box-shadow: 1px 3px 15px #7e807e;*/
-	-webkit-transition: all 1.5s;
-	-moz-transition: all 1.5s;
-	-ms-transition: all 1.5s;
-	-o-transition: all 1.5s;
-	transition: all 1.5s;
-}
-
-ul.accordion img{
-	width: 300px;
-}
-
-ul.accordion li:hover {
-	width: 300px;
-	-webkit-box-shadow: 0px 0px 7px #f20a0f;
-	-moz-box-shadow: 0px 0px 7px #f20a0f;
-	box-shadow: 0px 0px 7px #f20a0f;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	-ms-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-}
-
-ul.accordion li:nth-child(4){
-	width: 300px;
-}
-ul.accordion:hover li:nth-child(4){
-	width: 50px;
-}
-ul.accordion li:nth-child(4){
-	width: 300px;
-}
-
-
-/*   ###############   ACCORDION  END  ############## */

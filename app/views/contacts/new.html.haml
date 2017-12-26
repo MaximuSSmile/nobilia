@@ -58,142 +58,105 @@
 
 
 
+%div.contacts_video_block
+  %div.lozung_adres
+    %h3{:style => "color: #f20a0f"} NOBILIA
+    %p ОДЕССА, Екатерининская 73
+  %div.video_text
+    %h4 65 лет фабрика NOBILIA производит мебель высочайшего качества
+
+    %h4 Немецкие кухни всегда характеризуется своим техническим совершенством олицетворяет собой развития научно-технического прогресса и дизайнерского искусства
+
+    %h4 nobilia доставляет кухни с завода покупателям в 66 стран Мира
+
+    %h4 Гарнитура отвечает европейским стандартам качества и изготовлены из экологически чистых и безопасных для человека материалов
+
+    %h4 Благодаря непререкаемому немецкому авторитету - производитель смело даёт 15 лет гарантии на механизмы и 7 лет гарантии на фасады
+  %div.video_show
+    .video_heigth
+      %iframe{:allowfullscreen => "", :frameborder => "0",  :class => "video_setings", :src => "https://www.youtube.com/embed/NUfEtzaoBAA?rel=0"}
+
 /    %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
 /%div.contacts_welcome
 
 
+%div.accordionSlider
+  %div.accordion_loxung
+    %h3 Так же в салоние вы можете приобрести мебель от производителей:
+    %h3
+      %span{:style => "color: #f20a0f"}| 
+      W.Schillig 
+      %span{:style => "color: #f20a0f"}| 
+      Musterring 
+      %span{:style => "color: #f20a0f"}|
+      Mobitec 
+      %span{:style => "color: #f20a0f"}| 
+      Lattoflex 
+      %span{:style => "color: #f20a0f"}| 
+      Christine Kröncke 
+      %span{:style => "color: #f20a0f"}|
 
-%div.white_blok_contact
-  %div.white_bloks
-    %div.firstcontact{:style => "display: none"}
-      %h1 
-        Салон 
-        ИМПЕРИЯ
-      %p 
-        Приглашаем Вас в салон, чтобы продемонстрировать качество и красоту немецких кухонь 
-        %span{:style => "color: #f20a0f"} NOBILIA
-      %p Здесь Вы може обсудить с дизайнером планировку кухни и выбрать фасады.
-      %p Дизайнер разработает 3D-проект кухни и рассчитает стоимость ее изготовления.
-      %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
-    %div.contactdiscountblock{:style => "display: none"}
-      = link_to image_tag( 'discount/Beeck Kuchen1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
-      = link_to image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
-      = link_to image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
-      = link_to image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => 'discounts_contacts' ), discounts_path, target: '_blank'
-    %div.numbercontact{:style => "display: none"}
-      %h3 048 784 54 33 | +38 068 704 5433 | +38 050 704 5433 |  nobilia.odessa@gmail.com
-    %div.secondcontact
-      %div.delivercoloms
-        .col-md-12{:style => "display: none"}
-          .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "slide"}
-            = image_tag( 'discount/Beeck Kuchen1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Castello Magnolia1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Finesse Alpine White1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Flash White1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => 'salon',)
-            = image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => 'salon',)   
-        .col-md-12{:style => "display: none"}
-          .contact-salon-carusel
-            %div{:style => "height: 300px"}= image_tag( 'discount/Beeck Kuchen1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Castello Magnolia1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Finesse Alpine White1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Flash White1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Lux Magnolia1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia Touch Grey1.jpg')
-            %div{:style => "height: 300px"}= image_tag( 'discount/Nobilia York Satin Grey1.jpg') 
-        .col-md-12
-          %h3{:style => "color: #f20a0f"} NOBILIA
-          %p ОДЕССА, Екатерининская 73
-          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "500", :src => "https://www.youtube.com/embed/NUfEtzaoBAA?rel=0", :width => "100%"}
-
-          
-          %h3 Режим работы
-          %p Пн.-Сб. с 10:00 до 19:00
-          %p Вс. Выходной
-          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.93603303553!2d30.737016829283352!3d46.47357592229943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631833fc7e957%3A0x3d6a0b18c5b12152!2z0LLRg9C70LjRhtGPINCa0LDRgtC10YDQuNC90LjQvdGB0YzQutCwLCA3Mywg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sus!4v1489441183322", :style => "border:0", :width => "100%"}
-          /= image_tag( 'contact.jpg', :class => 'salon' )
-
-    %div.gorod
-      %p Если вы живете не в ODESSE, мы готовы работать над проектом удаленно. Наши дизайнеры пришлют каталоги, покажут варианты фасадов и разработают проект. После заключения договора мы приедем к вам на замер.
-
-    %div.linia
-      %hr{:size => "3"}/
-    %div.accordionSlider
-      %ul.accordion
-        %li= image_tag( 'discount/Beeck Kuchen1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia Castello Magnolia1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia Finesse Alpine White1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => '',)
-        %li= image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => '',)
-
-
-
-    %div.linia
-      %hr{:size => "3"}/
-    %div.thirdcontact
-      %h1 Запишитесь в салон на консультацию
-      %p Оставьте заявку, и мы согласуем с вами удобное время для визита в салон.
-    %div.fourthcontact
-      
-      %div.tabbed
-        %input{:type=>"checkbox", :name => "tabs", :id=>"tab-nav-1"}
-          %label{:for=>"tab-nav-1"} ЗАПИСАТЬСЯ
-        .bodyamsgroup
-        %div{ :class => ['tabs']}
-          %div
-            %h2 Давайте обсудим Вашу Шикарную кухню
-            = form_for @contact do |f|
-              %h4= f.label "Как мы можем к Вам обращаться:"
-              = f.text_field :name, required: true, :class => "ColorContactForm"
-
-              %h4= f.label "Ваш электронный адресс, email:"
-              = f.email_field :email, required: true, :class => "ColorContactForm"
-              %br/
-
-              %h4= f.label "Можете дать предварительное описание или вопрос:"
-              = f.text_area :message, as: :text, :class => "ColorContactForm"
-              %br/
-
-              %h4= f.label "Ваш контактный номер телефона:"
-              = f.text_area :phonenumber, as: :text, :class => "ColorContactForm"
-
-              %h4 Наш дизайнер свяжется с Вам и согласует все нюансы  
-              #call= f.submit 'ОТПРАВИТЬ'
-            /#call= link_to "ОТПРАВИТЬ", home_contacts_path 
-
-          /  = form_for @contact do |f|
-          /    = f.label "Как мы можем к Вам обращаться?"
-          /    %br/
-          /    = f.text_field :name, required: true, :class => "ColorContactForm"
-          /    %br/
-          /    = f.label "Ваша электронный адресс, email:"
-          /    %br/
-          /    = f.email_field :email, required: true, :class => "ColorContactForm"
-          /    %br/
-          /    = f.label "Можете дать предварительное описание или вопрос:"
-          /    %br/
-          /    = f.text_area :message, as: :text, :class => "ColorContactForm"
-          /    %br/
-          /    
-          /    = f.label "Ваш контактный номер телефона:"
-          /    %br/
-          /    = f.text_area :phonenumber, as: :text, :class => "ColorContactForm"
-          /    %br/
-          /    .hidden
-          /      = f.label :nickname
-          /      %br/
-          /      = f.text_field :nickname, hint: 'leave this field blank'
-          /    #call
+  %ul.accordion
+    %li= image_tag( 'discount/Beeck Kuchen1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia Castello Magnolia1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia Finesse Alpine White1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia Focus Mineral Grey1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia Lux Magnolia1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia Touch Grey1.jpg', :class => '',)
+    %li= image_tag( 'discount/Nobilia York Satin Grey1.jpg', :class => '',)
 
 
 
 
+%div.contacts_map
+  %div.lozung_adres_map
+    %h3 Режим работы
+    /%p ОДЕССА, Екатерининская 73
+    %p 
+      Пн.-Сб. с 10:00 до 19:00
+      %span{:style => "color: #f20a0f"}|  
+      Вс. Выходной
 
-    %div.fifthdeliver
+  %iframe{:allowfullscreen => "", :frameborder => "0", :height => "400", :src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d686.93603303553!2d30.737016829283352!3d46.47357592229943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c631833fc7e957%3A0x3d6a0b18c5b12152!2z0LLRg9C70LjRhtGPINCa0LDRgtC10YDQuNC90LjQvdGB0YzQutCwLCA3Mywg0J7QtNC10YHQsCwg0J7QtNC10YHRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sus!4v1489441183322", :style => "border:0", :width => "100%"}
+
+  %div.lozung_adres_map
+    %h4 
+      %span{:style => "color: #f20a0f"} ! 
+      Если вы живете не в ODESSE, мы готовы работать над проектом удаленно. Наши дизайнеры пришлют каталоги, покажут варианты фасадов и разработают проект. После заключения договора мы приедем к вам на замер.
+
+
+%div.appointment
+  %div.appointment_lozung1
+    %h1 Запишитесь в салон на консультацию
+    %p Оставьте заявку, и мы согласуем с вами удобное время для визита в салон.
+  %div.fourthcontact
+    
+    %div.tabbed
+      %input{:type=>"checkbox", :name => "tabs", :id=>"tab-nav-1"}
+        %label{:for=>"tab-nav-1"} ЗАПИСАТЬСЯ
+      .bodyamsgroup
+      %div{ :class => ['tabs']}
+        %div
+          %h2 Давайте обсудим Вашу Шикарную кухню
+          = form_for @contact do |f|
+            %h4= f.label "Как мы можем к Вам обращаться:"
+            = f.text_field :name, required: true, :class => "ColorContactForm"
+
+            %h4= f.label "Ваш электронный адресс, email:"
+            = f.email_field :email, required: true, :class => "ColorContactForm"
+            %br/
+
+            %h4= f.label "Можете дать предварительное описание или вопрос:"
+            = f.text_area :message, as: :text, :class => "ColorContactForm"
+            %br/
+
+            %h4= f.label "Ваш контактный номер телефона:"
+            = f.text_area :phonenumber, as: :text, :class => "ColorContactForm"
+
+            %h4 Наш дизайнер свяжется с Вам и согласует все нюансы  
+            #call= f.submit 'ОТПРАВИТЬ'
+
+
+
 = render "layouts/bottomnavigation"
   
