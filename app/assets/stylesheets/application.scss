@@ -27,22 +27,37 @@
 
 $logo-red: #f20a0f;
 
-.contactblok {
+/*   ###############   SNOW ELEMENT BEGIN  ############## */
 
-  background-color: #383838;
+@keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px, 20px 20px, 20px 20px, 20px 20px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px, 550px 1050px, 450px 450px, 350px 350px;}
+}
+ 
+@-moz-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+ 
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+ 
+@-ms-keyframes snow {
+ 0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
 
-	width: 100%;
-	height: 350px;
-	margin: 0 auto;
-	padding: 0px;
-      
-      font-family: "Helvetica Neue", "Arial", "sans-serif";
-    color: #bdbdbd;
 
-
-
-
-    	background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'), url('sn2red.png'), url('sn3red.png'), url('sn1red.png') ;
+.let_it_snow_white_red {
+		background-image:
+	 	url('snowflake.png'),
+	 	url('snowflake3.png'),
+	 	url('snowflake2.png'),
+	 	url('sn3red.png'),
+	 	url('sn2red.png'),
+	 	url('sn1red.png');
 	 /*background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'); */
 
 	 /*background-image: url('sn3red.png'), url('sn2red.png'), url('sn1red.png') ; */
@@ -52,11 +67,35 @@ $logo-red: #f20a0f;
 		 animation: snow 20s linear infinite;
 }
 
+/*   ###############    SNOW ELEMENT END  ############## */
+
+
+.contactblok {
+
+	@extend .let_it_snow_white_red ;
+
+  background-color: #383838;
+
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 15px;
+      
+      font-family: "Helvetica Neue", "Arial", "sans-serif";
+    color: #bdbdbd;
+
+
+
+
+
+}
+
 
 .botnavfirst {
 	text-align: center;
 	padding: 15px;
 	margin: 10px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 }
 		.botnavfirst > a {
