@@ -1,55 +1,85 @@
-%br
-%br
-%br
-%br
+:javascript
+  $(document).ready(function(){
+    
+
+    // Плавный скролл по якорям
+    $('a[href^="#"]').click(function () { 
+        elementClick = $(this).attr("href");
+      destination = $(elementClick).offset().top;
+      if($.browser.safari){
+      $('body').animate( { scrollTop: destination }, 1000 );
+      } else {
+          $('html').animate( { scrollTop: destination }, 1000 );
+      }
+      return false;
+     });
+  });
+
+
+
+%div.furnitur_grey60
+
+%div.furnitur_lozung1
+  %h2 
+    Мебель от производителей в салоне 
+    %span{:style => "color: #f20a0f"} ИМПЕРИЯ
+  %h3
+    %span{:style => "color: #f20a0f"}| 
+    %a{:href => "#gak_schiling"}W.Schillig 
+    %span{:style => "color: #f20a0f"}| 
+    %a{:href => "#gak_mustering"}Musterring 
+    %span{:style => "color: #f20a0f"}|
+    %a{:href => "##gak_mobitec"}Mobitec 
+    %span{:style => "color: #f20a0f"}| 
+    %a{:href => "#gak_lattoflex"}Lattoflex 
+    %span{:style => "color: #f20a0f"}| 
+    %a{:href => "#gak_chtistine"}Christine Kröncke 
+    %span{:style => "color: #f20a0f"}|  
+
+
+
+%div.f_schilling
+  %div.schilling_lozung
+
+    %div.schilling_loz_logo_name
+      %h2  
+        %span{:style => "color: #f20a0f"} W.Schillig
+    %div.schilling_loz_logo_blocks
+      %div.schilling_loz_logo_block1
+        = image_tag( 'w_schilling_white_logo.png', :class => '',)
+      %div.schilling_loz_logo_block2
+        = image_tag( 'w_schilling_black_logo.png', :class => '',)
+      %div.schilling_loz_logo_block3
+        = image_tag( 'w_schilling_award.png', :class => '',)
+        
+    %div.schilling_loz_logo_list
+      %h3 Изготовляет:
+      %h4 Диваны
+      %h4 Кресла
+      %h4 Лежачки
+      %h4 Софу
+      %h4 Столики
+      %h4 Аксесуары
+
+
+    %div.schilling_loz_logo_button    
+    
+  %div.schilling_photo
+    %ul.accordion_schilling
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo1.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo2.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo3.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo4.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo5.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo6.jpg', :class => '',)
+      %li= image_tag( 'furn/schilling_black/w_schilling_photo7.jpg', :class => '',)
+
+%div.furnitur_empty_block1
+
 
 %div.whitebloks
 
-  %div.textmain1
-    %h3 
-      MЕБЕЛЬ ОТ САЛОНА 
-      %span{:style => "color: #f20a0f"} IMPERIA 
-    %h3{:style => "display: none"} !!!!!!!РАЗДЕЛ В РАЗРАБОТКЕ!!!!!!! 
- 
 
-  %div.linia
-    %hr{:size => "3"}/ 
-  .firstdesignmain
-    %h2 
-      Мебель от производителей 
-    %h3
-      %span{:style => "color: #f20a0f"}| 
-      W.Schillig 
-      %span{:style => "color: #f20a0f"}| 
-      Musterring 
-      %span{:style => "color: #f20a0f"}|
-      Mobitec 
-      %span{:style => "color: #f20a0f"}| 
-      Lattoflex 
-      %span{:style => "color: #f20a0f"}| 
-      Christine Kröncke 
-      %span{:style => "color: #f20a0f"}|      
- 
-  %div.linia{:style => "display: none"}
-    %hr{:size => "3"}/ 
-  .firstdesignmain
-    %h2 
-      Мебель от производителя 
-      %span{:style => "color: #f20a0f"} W.Schillig
-
-    .firstfotodesignmain
-      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9"}
-        
-        = image_tag( 'furn/Schilling (2).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (3).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (4).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (5).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (6).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (7).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (8).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (9).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (10).jpg', :class => 'salon' )
-        = image_tag( 'furn/Schilling (1).jpg', :class => 'salon' )
         
   %div.linia
     %hr{:size => "3"}/ 
@@ -165,8 +195,8 @@
 
   %div.linia
     %hr{:size => "3"}/ 
-  .firstdesignmain
-    %h2 
+  .firstdesignmain#gak_chtistine
+    %h2
       %span{:style => "color: #f20a0f"} Christine Kröncke 
       Мебель и Свет
     

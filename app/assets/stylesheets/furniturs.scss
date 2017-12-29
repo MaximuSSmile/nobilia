@@ -1,3 +1,299 @@
 // Place all the styles related to the Furniturs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.let_it_snow_white_red {
+		background-image:
+	 	url('snowflake.png'),
+	 	url('snowflake3.png'),
+	 	url('snowflake2.png'),
+	 	url('sn3red.png'),
+	 	url('sn2red.png'),
+	 	url('sn1red.png');
+	 /*background-image: url('snowflake.png'), url('snowflake3.png'), url('snowflake2.png'); */
+
+	 /*background-image: url('sn3red.png'), url('sn2red.png'), url('sn1red.png') ; */
+		 -webkit-animation: snow 20s linear infinite;
+		 -moz-animation: snow 20s linear infinite;
+		 -ms-animation: snow 20s linear infinite;
+		 animation: snow 20s linear infinite;
+}
+
+
+
+
+/*   ###############   HEAD FURNITUR END  ############## */ 
+
+
+
+
+.furnitur_grey60 {
+	@extend .let_it_snow_white_red ;
+
+	width: 100%;
+	height: 60px;
+}
+
+
+.furnitur_lozung1{
+	background: #fff;
+
+	width: 100%;
+	height: 130px;
+		padding: 20px;
+
+	color: black;
+	text-align: center;
+
+}
+
+		.furnitur_lozung1 h2 {
+			margin: 10px auto;
+			text-transform: none; 
+		}
+
+		.furnitur_lozung1 h3 {
+			margin: 10px auto;
+		}
+
+		.furnitur_lozung1 h3 a{
+			text-decoration: none;
+			color: black;
+			transition: .5s;
+		}
+
+		.furnitur_lozung1 h3 a:hover{
+			color: #f20a0f;
+			font-size: 26px;
+			transition: .5s;
+		}
+
+
+/*   ###############    HEAD FURNITUR END  ############## */ 
+
+
+
+
+/*   ###############   W.SCHILLING BEGIN  ############## */ 
+
+.f_schilling {
+	 	@extend .let_it_snow_white_red ;
+	width: 100%;
+	min-width: 960px;
+	min-height: 320px;
+	height: auto;
+		border-top: 2px solid #f20a0f;
+		border-bottom: 2px solid #f20a0f;
+}
+
+.schilling_lozung{
+	display: inline-block;
+		float: left;
+	width: 30%;
+		
+}
+
+	
+		.schilling_loz_logo_name{
+
+		}
+
+		.schilling_loz_logo_blocks{
+			width: 46%;
+			display: inline-block;
+			float: left;
+		}
+      		.schilling_loz_logo_block1{
+      			background: #fff;
+      			width: 100%;
+      			margin: 5px 2%;
+      		}
+      			.schilling_loz_logo_block1 img{
+      				width: 100%;
+      				
+      			}
+
+      		.schilling_loz_logo_block2{
+      			width: 100%;
+      			margin: 5px 2%;
+      		}
+      			.schilling_loz_logo_block2 img{
+      				width: 100%;
+
+      			}
+      		.schilling_loz_logo_block3{
+      			background: #fff;
+      			width: 100%;
+      			margin: 5px 2%;
+
+
+      		}
+      			.schilling_loz_logo_block3 img{
+      				width: 100%;
+      			}
+
+
+		.schilling_loz_logo_list{
+			width: 48%;
+			
+			display: inline-block;
+			margin-left: 2%;
+		}
+
+			.schilling_loz_logo_list h3{
+				text-align: center;
+				font-size: 140%;
+			}
+			.schilling_loz_logo_list h4{
+				display: block;
+				text-align: left;
+				border-left: 2px solid #f20a0f;
+				padding-left: 2%; 
+				font-size: 120%;
+			}
+
+
+		.schilling_loz_logo_button {
+
+		}
+
+
+
+
+
+
+.schilling_photo{
+	display: inline-block;
+	width: 70%;
+	min-width: 670px;
+
+}
+
+
+		ul.accordion_schilling{
+
+					display: flex;
+					justify-content: center;
+					margin-top: 10px;
+					padding: 0;
+				}
+
+					ul.accordion_schilling li{
+						width: 5vw;
+						overflow: hidden;
+						
+						cursor: pointer;
+						display: block;
+							border-left: 2px solid #f20a0f;
+							border-right: 2px solid #f20a0f;
+						/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
+						/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
+						/*box-shadow: 1px 3px 15px #7e807e;*/
+						-webkit-transition: all 1.5s;
+						-moz-transition: all 1.5s;
+						-ms-transition: all 1.5s;
+						-o-transition: all 1.5s;
+						transition: all 1.5s;
+					}
+
+						ul.accordion_schilling li img{
+							width: 68vw;
+						}
+
+					ul.accordion_schilling li:hover {
+						width: 68vw;
+
+						-webkit-box-shadow: 0px 0px 7px #f20a0f;
+						-moz-box-shadow: 0px 0px 7px #f20a0f;
+						box-shadow: 0px 0px 7px #f20a0f;
+						-webkit-transition: all 1s;
+						-moz-transition: all 1s;
+						-ms-transition: all 1s;
+						-o-transition: all 1s;
+						transition: all 1s;
+					}
+
+					ul.accordion_schilling li:nth-child(1){
+						width: 68vw;
+						
+					}
+					ul.accordion_schilling:hover li:nth-child(1){
+						width: 5vw;
+						
+					}
+					ul.accordion_schilling li:nth-child(1):hover{
+						width: 68vw;
+						
+					}
+
+
+/*   ###############   W.SCHILLING END  ############## */ 
+
+.furnitur_empty_block1 {
+	background: #fff;
+	width: 100%;
+	height: 25px;
+}
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+
+
+
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
+/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+
+
+
+/*   ###############   HEAD WELCOME BEGIN  ############## */ 
