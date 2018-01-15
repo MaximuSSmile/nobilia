@@ -33,27 +33,27 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-  $('.contact-salon-topcarusel').slick({
-  width: 300,
-  arrows: false,
-  
-  autoplay: true,
-    autoplaySpeed: 0,
-    speed: 2500,
-    cssEase: 'linear',
+          $(document).ready(function(){
+            $('.contact-salon-topcarusel').slick({
+            width: 300,
+            arrows: false,
+            
+            autoplay: true,
+              autoplaySpeed: 0,
+              speed: 2500,
+              cssEase: 'linear',
 
-    pauseOnFocus: true,
-    pauseOnHover: true,
-    pauseOnDotsHover: true,
-  
-  dots: true,
-  infinite: true,
+              pauseOnFocus: true,
+              pauseOnHover: true,
+              pauseOnDotsHover: true,
+            
+            dots: true,
+            infinite: true,
 
-  variableWidth: true,
+            variableWidth: true,
 
-  });
-});
+            });
+          });
 
 
 
@@ -79,6 +79,44 @@ $(document).ready(function(){
   });
 });
 
+
+        $(document).ready(function(){
+          $('.mainpage-header-carusel').slick({
+          
+            asNavFor: '.mainpage-header-carusel-nav',
+          
+          autoplay: true,
+            fade: true,
+            arrows: false,
+
+            autoplaySpeed: 2000,
+            speed: 700,
+      
+          infinite: true,
+
+          
+          
+          });
+        });
+        $(document).ready(function(){
+          $('.mainpage-header-carusel-nav').slick({
+
+            asNavFor: '.mainpage-header-carusel',
+            
+            arrows: false,
+            
+              infinite: true,
+
+            slidesToShow: 1,
+            centerMode: true,
+
+
+            vertical: true,
+            focusOnSelect: true,
+
+            
+          });
+        });
 
 //   ###############   COMMENTS  BEGIN  ############## */ 
 

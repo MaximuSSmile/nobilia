@@ -1,18 +1,56 @@
+%div.mainpage_grey60
 
-.graymain
+%div.mainpage_headerslider
+  .mainpage-header-carusel{:style => "margin-bottom: -10px;"}
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_1.jpg', :class => 'mainpage_header_carusel_img' )
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_2.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_3.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_4.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_5.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_6.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_7.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_8.jpg', :class => 'mainpage_header_carusel_img') 
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_9.jpg', :class => 'mainpage_header_carusel_img' )
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_10.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_11.jpg', :class => 'mainpage_header_carusel_img')
+    %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_12.jpg', :class => 'mainpage_header_carusel_img')
+  .mainpage-header-carusel-nav{:style => "position: absolute;"}
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_1.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_2.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_3.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_4.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_5.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_6.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_7.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_8.jpg', :class => 'mainpage_header_carusel_img_nav') 
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_9.jpg', :class => 'mainpage_header_carusel_img_nav' )
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_10.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_11.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_12.jpg', :class => 'mainpage_header_carusel_img_nav')
 
-.headpickturemain
-  = image_tag( 'MAINFOTO.jpg', :class => 'mainhead' )
-.headpickturemainmob
-  = image_tag( 'MAINFOTOmob.png', :class => 'mainhead')
-.mainheadlozung
-  .headwords
-    %p#textmainhead1 Кухни из Германии
-    %p#textmainhead2 ПОД ЗАКАЗ
-    %p#textmainhead2 ГАРАНТИЯ 7 ЛЕТ НА КУХНИ И 15 ЛЕТ НА МЕХАНИЗМЫ
-    %p#textmainhead3 РАБОТАЕМ ПО ВСЕЙ УКРАИНЕ
-    .mainheadcontact
-      #mainheadcontactcall= link_to "ЗАКАЗАТЬ КУХНЮ", new_contact_path
+  .mainpage_header_carusel_lozung
+    .header_lozung1
+      %h3 КУХНИ ИЗ ГЕРМАНИИ
+      %h4 Гарантия 7 лет на кухни и 15 лет на механизмы
+  .mainpage_header_carusel_lozung
+  .mainpage_header_carusel_lozung
+
+
+
+
+
+/.headpickturemain
+/  = image_tag( 'MAINFOTO.jpg', :class => 'mainhead' )
+/.headpickturemainmob
+/  = image_tag( 'MAINFOTOmob.png', :class => 'mainhead')
+/.mainheadlozung
+/  .headwords
+/    %p#textmainhead1 Кухни из Германии
+/    %p#textmainhead2 ПОД ЗАКАЗ
+/    %p#textmainhead2 ГАРАНТИЯ 7 ЛЕТ НА КУХНИ И 15 ЛЕТ НА МЕХАНИЗМЫ
+/    %p#textmainhead3 РАБОТАЕМ ПО ВСЕЙ УКРАИНЕ
+/    .mainheadcontact
+/      #mainheadcontactcall= link_to "ЗАКАЗАТЬ КУХНЮ", new_contact_path
 
 .whiteblokmain
   %div.whitebloks
