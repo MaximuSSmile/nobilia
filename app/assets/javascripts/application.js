@@ -85,7 +85,7 @@ $(document).ready(function(){
           
             asNavFor: '.mainpage-header-carusel-nav',
           
-          autoplay: true,
+          
             fade: true,
             arrows: false,
 
@@ -110,10 +110,18 @@ $(document).ready(function(){
             slidesToShow: 1,
             centerMode: true,
 
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 700,
 
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                pauseOnDotsHover: true,
+            
             vertical: true,
             focusOnSelect: true,
 
+          
             
           });
         });
