@@ -126,6 +126,31 @@ $(document).ready(function(){
           });
         });
 
+
+
+
+
+          $(document).ready(function(){
+            $('.accord-mp-k-carusel').slick({
+            
+            arrows: false,
+            
+            autoplay: true,
+              autoplaySpeed: 0,
+              speed: 8000,
+              cssEase: 'linear',
+
+              pauseOnFocus: true,
+              pauseOnHover: true,
+              pauseOnDotsHover: true,
+                focusOnSelect: true,
+            //dots: true,
+            infinite: true,
+            variableWidth: true,
+
+            });
+          });
+
 //   ###############   COMMENTS  BEGIN  ############## */ 
 
 

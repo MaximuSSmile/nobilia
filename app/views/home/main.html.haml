@@ -15,18 +15,18 @@
     %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_11.jpg', :class => 'mainpage_header_carusel_img')
     %div{:style => "height: auto;"}= image_tag( 'mainpage/mainpage_header_12.jpg', :class => 'mainpage_header_carusel_img')
   .mainpage-header-carusel-nav{:style => "position: absolute;"}
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_1.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_2.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_3.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_4.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_5.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_6.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_7.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_8.jpg', :class => 'mainpage_header_carusel_img_nav') 
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_9.jpg', :class => 'mainpage_header_carusel_img_nav' )
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_10.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_11.jpg', :class => 'mainpage_header_carusel_img_nav')
-    %div{:style => ""}= image_tag( 'mainpage/mainpage_header_12.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_1_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_2_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_3_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_4_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_5_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_6_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_7_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_8_m.jpg', :class => 'mainpage_header_carusel_img_nav') 
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_9_m.jpg', :class => 'mainpage_header_carusel_img_nav' )
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_10_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_11_m.jpg', :class => 'mainpage_header_carusel_img_nav')
+    %div{:style => ""}= image_tag( 'mainpage/mini/mainpage_header_12_m.jpg', :class => 'mainpage_header_carusel_img_nav')
 
   .mainpage_header_carusel_lozung
     .header_lozung1
@@ -36,28 +36,12 @@
   .mainpage_header_carusel_lozung
 
 
-
-
-
-/.headpickturemain
-/  = image_tag( 'MAINFOTO.jpg', :class => 'mainhead' )
-/.headpickturemainmob
-/  = image_tag( 'MAINFOTOmob.png', :class => 'mainhead')
-/.mainheadlozung
-/  .headwords
-/    %p#textmainhead1 Кухни из Германии
-/    %p#textmainhead2 ПОД ЗАКАЗ
-/    %p#textmainhead2 ГАРАНТИЯ 7 ЛЕТ НА КУХНИ И 15 ЛЕТ НА МЕХАНИЗМЫ
-/    %p#textmainhead3 РАБОТАЕМ ПО ВСЕЙ УКРАИНЕ
-/    .mainheadcontact
-/      #mainheadcontactcall= link_to "ЗАКАЗАТЬ КУХНЮ", new_contact_path
-
-.whiteblokmain
-  %div.whitebloks
+.kitchen_tech
+  .characters_kitchen
     %div.firstmain
       %h3 Салон IMPERIA разрабатывает индивидуальные проекты кухонь производства немецких фабрик Nobilia, Bauformat, Beeck Kuchen.
 
-    %div.secondmain
+    %div.secondmain{:style => ""}
       %div.maincoloms
         .comteiner-fluid
           .row
@@ -112,119 +96,92 @@
                     %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC, а так же сертификаты Golden M, знак GS, DER BLAUE ENGEL. 
 
 
-    %div.linia
-      %hr{:size => "3"}/          
+.mainpage_kyhni_accardion
+  %ul.accordion_mainpage_kuchny
+    %li
+      %div.accord_mp_k_header
+        %h4 Кухни в современном стиле
+      %div.accord_mp_k_body
+        %div.accord_mp_k_body_text
+          %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функциональность. Эстетика упрощена до минимализма. 
+          %p Современная кухня создана для перфекционистов. 
+          .accord_mp_k_body_text_button
+            = link_to "Подробнее", kitchens_path,class: "accord_mp_k_body_text_button_block"          
+        %div.accord_mp_k_picture
+          .accord-mp-k-carusel
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv1_m.jpg')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv2_m_castella.jpg')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv3_m.jpg')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv4_m.jpg')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv5_m.jpg')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/sv7_m.jpg') 
+    %li
+      %div.accord_mp_k_header
+        %h4 Кухни в традиционном стиле
+      %div.accord_mp_k_body
+        %div.accord_mp_k_body_text
+          %p Традиционный стиль — это классика в новом прочтении, живая и жизнерадостная. Здесь в разумной пропорции сочетаются элегантность и скромность, а интересные мелочи подчеркивают индивидуальность. 
+          %p Тот кто любит себя баловать, не останется равнодушным. 
+          .accord_mp_k_body_text_button
+            = link_to "Подробнее", kitchens_path,class: "accord_mp_k_body_text_button_block"           
+        %div.accord_mp_k_picture
+          .accord-mp-k-carusel
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kl1_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kl3_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kl8_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kl9_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kl10_m.jpg', :class => '') 
+
+    %li
+      %div.accord_mp_k_header
+        %h4 Кухни без ручек
+      %div.accord_mp_k_body
+        %div.accord_mp_k_body_text
+          %p Кухня без ручек — компромисс между декоративностью и строгостью. Ее маленький секрет — скрытая система доводчиков. В дизайне нет жестких правил, доступны любые цвета и материалы. Спокойные, гладкие кухонные фронты контрастных оттенков создают современный и в то же время уютный образ.  
+          .accord_mp_k_body_text_button
+            = link_to "Подробнее", kitchens_path,class: "accord_mp_k_body_text_button_block"          
+        %div.accord_mp_k_picture
+          .accord-mp-k-carusel
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr1_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr2_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr3_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr4_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr5_m.jpg', :class => '') 
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/wr6_m.jpg', :class => '') 
+    %li
+      %div.accord_mp_k_header
+        %h4 Кухни "Коттедж"
+      %div.accord_mp_k_body
+        %div.accord_mp_k_body_text
+          %p Кухни выполнены в лучших традициях классического стиля -изысканный декор, элегантная кухонная фурнитура, выдержанные пропорции.    
+          .accord_mp_k_body_text_button
+            = link_to "Подробнее", kitchens_path,class: "accord_mp_k_body_text_button_block"         
+        %div.accord_mp_k_picture
+          .accord-mp-k-carusel
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kotedj1_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kotedj2_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kotedj3_m.jpg', :class => '')
+            %div{:style => ""}= image_tag( 'mainpage/carrusel/width360/kotedj4_m.jpg', :class => '')
+
+
+/.headpickturemain
+/  = image_tag( 'MAINFOTO.jpg', :class => 'mainhead' )
+/.headpickturemainmob
+/  = image_tag( 'MAINFOTOmob.png', :class => 'mainhead')
+/.mainheadlozung
+/  .headwords
+/    %p#textmainhead1 Кухни из Германии
+/    %p#textmainhead2 ПОД ЗАКАЗ
+/    %p#textmainhead2 ГАРАНТИЯ 7 ЛЕТ НА КУХНИ И 15 ЛЕТ НА МЕХАНИЗМЫ
+/    %p#textmainhead3 РАБОТАЕМ ПО ВСЕЙ УКРАИНЕ
+/    .mainheadcontact
+/      #mainheadcontactcall= link_to "ЗАКАЗАТЬ КУХНЮ", new_contact_path
+
+.whiteblokmain
+  %div.whitebloks
+      
     %div.textmain1
       %h3 IMPERIA поставляет кухни на заказ напрямую от производителей из Германии. У нас собственная служба логистики, команда талантливых дизайнеров и опытных сборщиков.
-
-    
-
-
-
-
-
-    %div.linia
-      %hr{:size => "3"}/ 
-    %div.maincoloms
-      .comteiner-fluid
-        .row
-          .col-md-6      
-            .firstdesignmain
-              %h2 Кухни в современном стиле
-              .firstfotodesignmain
-                .kitchen_3d
-                  %div.rotate_kitchen
-                    %div.img_rotate_k
-                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
-                        = image_tag( 'sv1.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'castella.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'sv2.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'sv3.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'sv4.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'sv5.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'sv7.jpg', :class => 'mainbodyfoto' )
-
-                    %div.text_rotate_k
-                      .symbol{:style => "margin-top: 15px;"}
-                        .glyphicon.glyphicon-heart-empty
-                      #quotation
-                      %p Кухня в современном стиле — это нечто особенное. В философии такой кухонной архитектуры на первом месте всегда функциональность. Эстетика упрощена до минимализма. 
-                      %p Современная кухня создана для перфекционистов.
-                      .port_button
-                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
-
-          .col-md-6      
-            .firstdesignmain
-              %h2 Кухни в традиционном стиле
-              .firstfotodesignmain
-                .kitchen_3d
-                  %div.rotate_kitchen
-                    %div.img_rotate_k
-                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "true"}
-                        = image_tag( 'kl1.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kl3.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kl8.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kl9.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kl10.jpg', :class => 'mainbodyfoto' )
-                    %div.text_rotate_k
-                      .symbol{:style => "margin-top: 15px;"}
-                        .glyphicon.glyphicon-heart-empty
-                      #quotation
-                        %p Традиционный стиль — это классика в новом прочтении, живая и жизнерадостная. Здесь в разумной пропорции сочетаются элегантность и скромность, а интересные мелочи подчеркивают индивидуальность. 
-                        %p Тот кто любит себя баловать, не останется равнодушным.
-                      .port_button
-                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
-
-
-    %div.linia
-      %hr{:size => "3"}/ 
-    %div.maincoloms
-      .comteiner-fluid
-        .row
-          .col-md-6      
-            .firstdesignmain
-              %h2 Кухни без ручек
-              .firstfotodesignmain
-                .kitchen_3d
-                  %div.rotate_kitchen
-                    %div.img_rotate_k
-                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
-                        = image_tag( 'wr1.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'wr2.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'wr3.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'wr4.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'wr5.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'wr6.jpg', :class => 'mainbodyfoto' )
-                    %div.text_rotate_k
-                      .symbol{:style => "margin-top: 15px;"}
-                        .glyphicon.glyphicon-heart-empty
-                      #quotation
-                        %p Кухня без ручек — компромисс между декоративностью и строгостью. Ее маленький секрет — скрытая система доводчиков. В дизайне нет жестких правил, доступны любые цвета и материалы. Спокойные, гладкие кухонные фронты контрастных оттенков создают современный и в то же время уютный образ. 
-                      .port_button
-                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
-          .col-md-6      
-            .firstdesignmain
-              %h2 Кухни "Коттедж"
-              .firstfotodesignmain
-                .kitchen_3d
-                  %div.rotate_kitchen
-                    %div.img_rotate_k
-                      .fotorama{"data-nav" => "false", "data-transition" => "slide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "3500", "data-loop" =>"true", "data-stopautoplayontouch" => "false"}
-                        = image_tag( 'kotedj1.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kotedj2.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kotedj3.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kotedj4.jpg', :class => 'mainbodyfoto' )
-
-                    %div.text_rotate_k
-                      .symbol{:style => "margin-top: 15px;"}
-                        .glyphicon.glyphicon-heart-empty
-                      #quotation
-                        %p Кухнb выполненs в лучших традициях классического стиля -изысканный декор, элегантная кухонная фурнитура, выдержанные пропорции. 
-                      .port_button
-                        = link_to "Подробнее", kitchens_path,class: "port_button_block"
-
-
-
 
 
 .portfoliopickturemain
