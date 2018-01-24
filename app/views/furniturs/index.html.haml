@@ -26,12 +26,16 @@
   %h3
     %span{:style => "color: #f20a0f"}| 
     %a{:href => "#gak_schiling"}W.Schillig 
+
     %span{:style => "color: #f20a0f"}| 
-    %a{:href => "#gak_mustering"}Musterring 
-    %span{:style => "color: #f20a0f"}|
     %a{:href => "##gak_mobitec"}Mobitec 
+
+    %span{:style => "color: #f20a0f"}|
+    %a{:href => "#gak_lattoflex"}Lattoflex
+
     %span{:style => "color: #f20a0f"}| 
-    %a{:href => "#gak_lattoflex"}Lattoflex 
+    %a{:href => "#gak_mustering"}Musterring
+    
     %span{:style => "color: #f20a0f"}| 
     %a{:href => "#gak_chtistine"}Christine Kröncke 
     %span{:style => "color: #f20a0f"}|  
@@ -44,21 +48,21 @@
     %div.schilling_loz_logo_name
       %h2  
         %span{:style => "color: #f20a0f"} W.Schillig
+      %h3 
+        Мебель от производителя:
     %div.schilling_loz_logo_blocks
       %div.schilling_loz_logo_block1
         = image_tag( 'w_schilling_white_logo.png', :class => '',)
       %div.schilling_loz_logo_block2
         = image_tag( 'w_schilling_black_logo.png', :class => '',)
-      %div.schilling_loz_logo_block3
-        = image_tag( 'w_schilling_award.png', :class => '',)
+      
         
     %div.schilling_loz_logo_list
-      %h3 
-        Мебель от производителя 
-        %span{:style => "color: #f20a0f"} W.SCHILLIG:
       %h4 Диваны
       %h4 Кресла
       %h4 Аксессуары
+      %div.schilling_awards_logo
+        = image_tag( 'w_schilling_award.png', :class => '',)
 
 
     %div.schilling_loz_logo_button    
@@ -73,11 +77,54 @@
       %li= image_tag( 'furn/schilling_black/w_schilling_photo6.jpg', :class => '',)
       %li= image_tag( 'furn/schilling_black/w_schilling_photo7.jpg', :class => '',)
 
+
 %div.furnitur_empty_block1
 
 
+%div.f_mobitec
+    
+    
+  %div.mobitec_photo
+    %ul.accordion_mobitec
+      %li= image_tag( 'furn/mobitec/mobitec_2.jpg', :class => '',)
+      %li= image_tag( 'furn/mobitec/mobitec_5.jpg', :class => '',)
+      %li= image_tag( 'furn/mobitec/mobitec_6.jpg', :class => '',)
+      %li= image_tag( 'furn/mobitec/mobitec_7.jpg', :class => '',)
+      %li= image_tag( 'furn/mobitec/mobitec_8.jpg', :class => '',)
+      %li= image_tag( 'furn/mobitec/mobitec_9.jpg', :class => '',)
+      %li
+        %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "100%", :src => "https://www.youtube.com/embed/aJSjth6WFjc?rel=0&showinfo=0", :width => "100%"}
+  %div.mobitec_lozung
 
-%div.f_schilling
+    %div.mobitec_loz_logo_name
+      %h2  
+        %span{:style => "color: #f20a0f"} MOBITEC
+      %h3 
+        Мебель от производителя:
+    
+    %div.mobitec_loz_logo_list
+      %h4 Кресла
+      %h4 Стулья
+      %h4 Пуфы
+      %h4 Столы
+      %h4 Аксессуары
+
+    %div.mobitec_loz_logo_blocks
+      %div.mobitec_loz_logo_block1
+        = image_tag( 'furn/mobitec/mobitec_logo.png', :class => '',)
+      %div.mobitec_loz_logo_block2
+        = image_tag( 'furn/mobitec/mobitec_black.png', :class => '',)
+
+        
+
+
+
+    %div.mobitec_loz_logo_button  
+
+
+%div.furnitur_empty_block1
+
+%div.f_schilling{:style => ""}
   .firstfotodesignmain
     %h2 
       Матрасы и Ламели от производителя 
@@ -95,8 +142,7 @@
 %div.furnitur_empty_block1
 
 
-
-%div.f_schilling
+%div.f_schilling{:style => "width: 99%"}
   .firstdesignmain
     %h2 
       Мебель от производителя 
