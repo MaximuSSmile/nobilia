@@ -424,8 +424,128 @@
 
 /*   ###############   MOBITEC END  ############## */ 
 
+	.f_lattoflex{
+		width: 100%;
+		min-width: 960px;
+		height: auto;
+
+		border-top: 2px solid #f20a0f;
 
 
+	}
+	  	.lattoflex_stand{
+	  		width: 100%;
+
+	  	}
+		    .lattoflex_lozung{
+		    	position: relative;
+		    	top: 0px;
+		    	width: 200px;
+		    	margin: 0 auto
+		    }
+
+
+
+			.lattoflex_stand_pickture img{
+			   	width: 100%;
+		    }
+
+
+			.lattoflex_lozung2 {
+				background: #ffffff;
+
+				width: 100%;
+				margin: 0 auto;
+
+				text-align: center;
+				color: black;		
+			}
+
+				.lattoflex_lozung2 h2{
+					margin-bottom: 0px;
+				}
+
+
+
+			.lattoflex_mehanizm {
+				background: #ffffff;
+				width: 100%;
+
+			}
+
+				.lattoflex_mehanizm ul{
+					display: flex;
+					justify-content: center;
+					margin-bottom: 0px;
+
+				}
+
+					.lattoflex_mehanizm ul li {
+						display: block;
+						width: 19%;
+						height: inherit;
+
+						text-align: center;
+						color: black;
+						padding: 5px 10px;
+					}
+
+					.lattoflex_mehanizm ul li:nth-child(4){
+						width: 41%;
+
+
+					}
+
+					.lattoflex_mehanizm ul li img{
+						width: 100%;
+						position: relative;
+						bottom: 0px;
+					}
+
+						.lattoflex_mehanizm ul li h3{
+							display: block;
+							text-decoration: underline;
+							text-decoration-color: #f20a0f;
+
+						}
+			.lattoflex_podrobnee {
+				@extend .let_it_snow_white_red ;
+				background: #ffffff;
+				width: 100%;
+			}
+
+			.lattoflex_podrobnee h2{
+				margin: 0px;
+				text-align: center;
+				padding: 20px;
+			}
+				.lattoflex_podrobnee h2 a{
+					display: block;
+					background: #ffffff;
+					width: 748px;
+					
+					margin: 0 auto;
+
+
+
+					color: black;
+					font-size: 22px;
+						text-decoration: underline overline #f20a0f;
+
+
+					transition: .5s;
+
+				}
+
+				.lattoflex_podrobnee h2 a:hover{
+
+					font-size: 30px;
+
+					text-decoration: underline overline #f20a0f;
+
+
+					transition: 1s all;
+				}
 /*   ###############   HEAD WELCOME BEGIN  ############## */ 
 
 

@@ -1,20 +1,3 @@
-:javascript
-  $(document).ready(function(){
-    
-
-    // Плавный скролл по якорям
-    $('a[href^="#"]').click(function () { 
-        elementClick = $(this).attr("href");
-      destination = $(elementClick).offset().top;
-      if($.browser.safari){
-      $('body').animate( { scrollTop: destination }, 1000 );
-      } else {
-          $('html').animate( { scrollTop: destination }, 1000 );
-      }
-      return false;
-     });
-  });
-
 
 
 %div.furnitur_grey60
@@ -124,20 +107,50 @@
 
 %div.furnitur_empty_block1
 
-%div.f_schilling{:style => ""}
-  .firstfotodesignmain
-    %h2 
-      Матрасы и Ламели от производителя 
-      %span{:style => "color: #f20a0f"}Lattoflex
 
-    %div{:style => "width: 49%; display: inline-block;"}
-      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "","data-ratio" => "16/9",}
-        = image_tag( 'lattoflex1.png', :class => 'salon' )
-        = image_tag( 'lattoflex2.png', :class => 'salon' )
-        = image_tag( 'lattoflex3.png', :class => 'salon' )
-        = image_tag( 'lattoflex4.png', :class => 'salon' )
-    %div{:style => "width: 49%; display: inline-block;"} 
-      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/iGVcs5nl060?rel=0&showinfo=0", :width => "100%"}
+
+
+
+%div.f_lattoflex
+  %div.lattoflex_stand
+    
+    %div.lattoflex_lozung
+      %h2{:style => "color: #f20a0f"} Lattoflex
+    %div.lattoflex_stand_pickture
+      = image_tag( 'furn/lattoflex/lattoflex_head.png', :class => '',)
+    %div.lattoflex_lozung2
+      %h2 
+        Матрасы и Ламели от производителя 
+        %span{:style => "color: #f20a0f"} Lattoflex
+    %div.lattoflex_mehanizm 
+      %ul       
+        %li
+          %h3 MATРAC
+          %p Для достижения максимального ортопедического эффекта от использования инновационных оснований Lattoflex была разработана специальная серия безпружинных, пенополиуретонових матрасов различной степени жесткости. Фирменные матрасы Lattoflex в точности реагируют на различные варианты настройки основания, непосредственно и без потерь передавая их динамику.
+          = image_tag( 'furn/lattoflex/lattoflex_mattress.png', :class => '',)
+
+        %li
+          %h3 ЛАМЕЛИ
+          %p Сон - это треть человеческой жизни, поэтому очень важно, чтобы он был здоровым и качественным. Здоровый сон зависит не только от выбранного кровати и матраса, как мы привыкли думать. Ведущие ортопеды со всего мира провели ряд исследований и выяснили, что 70% здорового сна зависит именно от ламелей, на которых мы спим.
+          = image_tag( 'furn/lattoflex/lattoflex_lameli.jpg', :class => '',)
+
+        %li
+          %h3 ОСНОВАНИЕ
+          %p Инновация этой системы заключается в амортизации 4-х уровней, оптимально поддерживает тело спящего человека. Важно то, что ортопедическое основание обладает конструктивными возможностями для быстрой адаптации к меняющимся требованиям жизни. Именно эта особенность и отличает ортопедические основания Lattoflex от других. 
+          = image_tag( 'furn/lattoflex/Lattoflex_mehanizm.gif', :class => '',)
+          
+        %li
+          = image_tag( 'furn/lattoflex/lattoflex_all.jpg', :class => '',)
+    %div.lattoflex_podrobnee
+      %h2 
+        %a{:href => "http://lattoflex-system.ru/", :target => "_blank"}
+          подробренее от производителя 
+          %span{:style => "color: #f20a0f"} Lattoflex
+
+
+
+
+
 
 %div.furnitur_empty_block1
 
@@ -145,7 +158,7 @@
 %div.f_schilling{:style => "width: 99%"}
   .firstdesignmain
     %h2 
-      Мебель от производителя 
+      Мебель 
       %span{:style => "color: #f20a0f"}Musterring
     %div.maincoloms
       .comteiner-fluid
@@ -213,30 +226,6 @@
 
 %div.furnitur_empty_block1
 
-
-
-%div.f_schilling
-  .firstdesignmain
-    %h2 
-      Мебель от производителя 
-      %span{:style => "color: #f20a0f"} Mobitec
-    
-    .firstfotodesignmain
-      .fotorama{"data-nav" => "thumbs", "data-autoplay"  => "4000", "data-loop" =>"true", "data-allowfullscreen" => "true", "data-transition" => "crossfade", "data-navposition" => "left",}
-        = image_tag( 'furn/mobitec (1).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (2).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (3).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (4).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (5).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (6).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (7).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (8).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (9).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (10).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (11).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (12).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (13).jpg', :class => 'salon' )
-        = image_tag( 'furn/mobitec (14).jpg', :class => 'salon' )
 
 %div.furnitur_empty_block1
 
