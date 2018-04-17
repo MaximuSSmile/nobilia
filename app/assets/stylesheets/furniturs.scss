@@ -415,14 +415,14 @@
 		}
 
 
-
-
-
-
-
-
-
 /*   ###############   MOBITEC END  ############## */ 
+
+
+
+
+
+
+/*   ###############   LATTOFLEX BEGIN  ############## */ 
 
 	.f_lattoflex{
 		width: 100%;
@@ -546,27 +546,354 @@
 
 					transition: 1s all;
 				}
-/*   ###############   HEAD WELCOME BEGIN  ############## */ 
 
-
-/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
-
-
-
-
-/*   ###############   HEAD WELCOME BEGIN  ############## */ 
-
-
-/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+/*   ###############   LATTOFLEX END  ############## */ 
 
 
 
 
-/*   ###############   HEAD WELCOME BEGIN  ############## */ 
 
 
 
-/*   ###############   Слайдер обрасцы кухонь END  ############## */ 
+
+/*   ###############   MUSTERRING BEGIN  ############## */ 
+
+
+.f_musterring {
+	 	/* @extend .let_it_snow_white_red ; */
+	width: 100%;
+	min-width: 960px;
+	min-height: 320px;
+	height: auto;
+	padding: 10px 0;
+		border-top: 2px solid #f20a0f;
+		border-bottom: 2px solid #f20a0f;
+}
+
+
+.musterring_photo{
+	display: inline-block;
+	
+	width: 70%;
+	min-width: 670px;
+
+}
+
+
+		ul.accordion_musterring{
+
+					display: flex;
+
+					justify-content: center;
+					margin-top: 10px;
+					padding: 0px;
+					margin: 0px;
+				}
+
+					ul.accordion_musterring li{
+						width: 5vw;
+						overflow: hidden;
+						
+						cursor: pointer;
+						display: block;
+							border-left: 2px solid #f20a0f;
+							border-right: 2px solid #f20a0f;
+						/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
+						/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
+						/*box-shadow: 1px 3px 15px #7e807e;*/
+						-webkit-transition: all 1.5s;
+						-moz-transition: all 1.5s;
+						-ms-transition: all 1.5s;
+						-o-transition: all 1.5s;
+						transition: all 1.5s;
+					}
+
+						ul.accordion_musterring li img{
+							width: 68vw;
+						}
+
+					ul.accordion_musterring li:hover {
+						width: 68vw;
+
+						-webkit-box-shadow: 0px 0px 7px #f20a0f;
+						-moz-box-shadow: 0px 0px 7px #f20a0f;
+						box-shadow: 0px 0px 7px #f20a0f;
+						-webkit-transition: all 1s;
+						-moz-transition: all 1s;
+						-ms-transition: all 1s;
+						-o-transition: all 1s;
+						transition: all 1s;
+					}
+
+					ul.accordion_musterring li:nth-child(7){
+						width: 68vw;
+						
+					}
+					ul.accordion_musterring:hover li:nth-child(7){
+						width: 5vw;
+						
+					}
+					ul.accordion_musterring li:nth-child(7):hover{
+						width: 68vw;
+						
+					}
+
+
+.musterring_lozung{
+	display: inline-block;
+	float: right;
+	width: 30%;
+		
+}
+
+	
+		.musterring_loz_logo_name{
+			height: auto;
+		}
+
+			.musterring_loz_logo_name h2{
+				margin: 10px auto 0px;
+			}
+			.musterring_loz_logo_name h3{
+
+				margin: 7px auto 0px;
+				text-align: center;
+			}
+
+		.musterring_loz_logo_blocks{
+			width: 46%;
+			margin-left: 2%;
+			display: inline-block;
+			
+		}
+      		.musterring_loz_logo_block1{
+      			background: #fff;
+      			width: 100%;
+      			margin: 15px 2%;
+      		}
+      			.musterring_loz_logo_block1 img{
+      				width: 100%;
+      				
+      			}
+
+      		.musterring_loz_logo_block2{
+      			width: 100%;
+      			margin: 15px 2%;
+      		}
+      			.musterring_loz_logo_block2 img{
+      				width: 100%;
+
+      			}
+
+
+
+		.musterring_loz_logo_list{
+			width: 48%;
+			float: left;
+			display: inline-block;
+			margin-left: 2%;
+		}
+
+			.musterring_loz_logo_list h3{
+				text-align: center;
+				font-size: 140%;
+			}
+			.musterring_loz_logo_list h4{
+				display: block;
+				text-align: left;
+				border-left: 2px solid #f20a0f;
+				padding-left: 2%; 
+				font-size: 120%;
+			}
+
+
+		.musterring_loz_logo_button {
+
+		}
+
+/*   ###############   MUSTERRING END  ############## */ 
+
+
+
+
+
+
+
+/*   ###############   Christine Kröncke BEGIN  ############## */ 
+
+.f_christine_k {
+	 	/* @extend .let_it_snow_white_red ; */
+	width: 100%;
+	min-width: 960px;
+	min-height: 320px;
+	height: auto;
+		border-top: 2px solid #f20a0f;
+		border-bottom: 2px solid #f20a0f;
+}
+
+.christine_k_lozung{
+	display: inline-block;
+		float: left;
+	width: 30%;
+		
+}
+
+	
+		.christine_k_loz_logo_name{
+			height: auto;
+		}
+			.christine_k_loz_logo_name h2{
+				margin: 10px auto 0px;
+
+			}
+			.christine_k_loz_logo_name h3{
+
+				margin: 7px auto 0px;
+				text-align: center;
+			}
+
+		.christine_k_loz_logo_blocks{
+			width: 46%;
+			display: inline-block;
+			float: left;
+		}
+      		.christine_k_loz_logo_block1{
+      			background: #fff;
+      			width: 100%;
+      			margin: 5px 2%;
+      		}
+      			.christine_k_loz_logo_block1 img{
+      				width: 100%;
+      				
+      			}
+
+      		.christine_k_loz_logo_block2{
+      			width: 100%;
+      			margin: 5px 2%;
+      			padding: 5px 5px 10px 20px;
+      		}
+      			.christine_k_loz_logo_block2 img{
+      				width: 100%;
+
+      			}
+
+
+
+		.christine_k_loz_logo_list{
+			width: 48%;
+			
+			display: inline-block;
+			margin-left: 2%;
+		}
+
+			.christine_k_loz_logo_list h3{
+				text-align: center;
+				font-size: 140%;
+			}
+			.christine_k_loz_logo_list h4{
+				display: block;
+				text-align: right;
+				border-right: 2px solid #f20a0f;
+				padding-left: 2%; 
+				font-size: 120%;
+				padding-right: 3px;
+			}
+
+			     .christine_k_awards_logo{
+						background: #383838;
+			     	
+			     	display: block;
+					margin-left: auto;
+					    width: 65%;
+
+					border-right: 2px solid #f20a0f;
+					padding-right: 3px;
+      			}
+
+      			.christine_k_awards_logo img{
+      				width: 100%;
+      			}
+
+
+		.christine_k_loz_logo_button {
+
+		}
+
+
+
+
+
+
+.christine_k_photo{
+	display: inline-block;
+	width: 70%;
+	min-width: 670px;
+
+}
+
+
+			.christine_k_awards_logo img{
+				width: 100%;
+			}
+
+		ul.accordion_christine_k{
+
+					display: flex;
+					justify-content: center;
+					margin-top: 10px;
+					padding: 0;
+				}
+
+					ul.accordion_christine_k li{
+						width: 5vw;
+						overflow: hidden;
+						
+						cursor: pointer;
+						display: block;
+							border-left: 2px solid #f20a0f;
+							border-right: 2px solid #f20a0f;
+						/*-webkit-box-shadow: 1px 3px 15px #7e807e;*/
+						/*-moz-box-shadow: 1px 3px 15px #7e807e;*/
+						/*box-shadow: 1px 3px 15px #7e807e;*/
+						-webkit-transition: all 1.5s;
+						-moz-transition: all 1.5s;
+						-ms-transition: all 1.5s;
+						-o-transition: all 1.5s;
+						transition: all 1.5s;
+					}
+
+						ul.accordion_christine_k li img{
+							width: 48vw;   /* соотношение сторон 1 к 1.62 */
+						}
+
+					ul.accordion_christine_k li:hover {
+						width: 68vw;
+
+						-webkit-box-shadow: 0px 0px 7px #f20a0f;
+						-moz-box-shadow: 0px 0px 7px #f20a0f;
+						box-shadow: 0px 0px 7px #f20a0f;
+						-webkit-transition: all 1s;
+						-moz-transition: all 1s;
+						-ms-transition: all 1s;
+						-o-transition: all 1s;
+						transition: all 1s;
+					}
+
+					ul.accordion_christine_k li:nth-child(1){
+						width: 68vw;
+						
+					}
+					ul.accordion_christine_k:hover li:nth-child(1){
+						width: 5vw;
+						
+					}
+					ul.accordion_christine_k li:nth-child(1):hover{
+						width: 68vw;
+						
+					}
+
+
+/*   ###############   Christine Kröncke END  ############## */ 
 
 
 
