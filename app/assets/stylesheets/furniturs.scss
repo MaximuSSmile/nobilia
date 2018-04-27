@@ -609,7 +609,7 @@
 					}
 
 						ul.accordion_musterring li img{
-							width: 68vw;
+							width: 48vw;
 						}
 
 					ul.accordion_musterring li:hover {
@@ -664,15 +664,18 @@
 			width: 46%;
 			margin-left: 2%;
 			display: inline-block;
+			border-right: 2px solid #f20a0f;
 			
 		}
       		.musterring_loz_logo_block1{
       			background: #fff;
-      			width: 100%;
+      			width: 85%;
       			margin: 15px 2%;
+
       		}
       			.musterring_loz_logo_block1 img{
       				width: 100%;
+      				padding: 15%;
       				
       			}
 
@@ -741,6 +744,7 @@
 	
 		.christine_k_loz_logo_name{
 			height: auto;
+
 		}
 			.christine_k_loz_logo_name h2{
 				margin: 10px auto 0px;
@@ -756,6 +760,7 @@
 			width: 46%;
 			display: inline-block;
 			float: left;
+			padding-top: 5px;
 		}
       		.christine_k_loz_logo_block1{
       			background: #fff;
@@ -768,9 +773,10 @@
       			}
 
       		.christine_k_loz_logo_block2{
+      			border-left: 2px solid #f20a0f;
       			width: 100%;
       			margin: 5px 2%;
-      			padding: 5px 5px 10px 20px;
+      			padding: 0px 0px 0px 10px;
       		}
       			.christine_k_loz_logo_block2 img{
       				width: 100%;
