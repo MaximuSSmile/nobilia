@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+$logo-red: #f20a0f;
+
+
+.test_block_for_color {
+	height: 500px;
+	width: 100%;
+
+}
+
+
+	.top_bar_imperia {
+		  background-color: #383838;
+		  background-color: transparent;
+	      -moz-osx-font-smoothing: grayscale;
+		  -webkit-font-smoothing: antialiased;
+
+
+		  display: grid;
+		  grid-template-columns: 0px 0px 0px 0px 1fr 300px 60px 1fr;
+		  grid-auto-rows: 60px;
+		  grid-column-gap: 10px;
+
+		position: absolute;
+		  top: 0px;
+
+		width: 100%;
+		  min-width: 375px;
+		height: 60px;
+		border-bottom: 4px solid #f20a0f;
+
+
+	  z-index: 1000;
+		/*background-color: rgba(56, 56, 56, 0.46)*/;
+	}
+			.kyhni_butn {
+				display: none;
+			}
+			.mebli_butn {
+				display: none;
+			}
+			.portfolio_butn {
+				display: none;
+			}
+			.salon_butn {
+				display: none;
+			}
+			.i_logo {
+				position: absolute;
+				margin: 0px auto;
+			}
+
+		@media screen and (min-width: 990px) {
+			.top_bar_imperia {
+				grid-template-columns: 140px 130px 170px 120px 1fr 300px 60px 0px;
+			}
+			.kyhni_butn {
+				display: inline-block;
+			}
+			.mebli_butn {
+				display: inline-block;
+			}
+			.portfolio_butn {
+				display: inline-block;
+			}
+			.salon_butn {
+				display: inline-block;
+			}
+
+		}
+
+.top_bar_imperia div {
+
+}
+
+							.bar-buttons {
+							    display: inline-block;
+							    float: left;
+
+								width: 120px;
+								height: 60px;
+
+								    font-family: 'Arimo', sans-serif;
+								    /*font-family: "Helvetica Neue","Arial","sans-serif";*/
+								    font-size: 20px;
+								    text-transform: uppercase;
+								    text-align: center;
+								    text-decoration: none;
+								    letter-spacing: 1px;
+								    font-weight: bold;
+								    font-style: normal;
+								    
+								    color: #fff;
+								    transition: .5s;
+							    
+							    padding: 10px 5px;
+							    padding-top: 15px;
+							    margin: auto 0px;
+
+							    
+							}
+
+							.bar-buttons-active {	
+								background-color: white;
+								text-decoration: none;
+								transition: .7s;
+								border-left: 4px solid #f20a0f;
+								border-right: 4px solid #f20a0f;
+							}
+
+							.bar-buttons-hover {	
+								text-decoration: none;
+						        color: $logo-red;
+								transition: .7s;
+								background-color: white;
+								border-left: 4px solid #f20a0f;
+								border-right: 4px solid #f20a0f;
+							}
+
+							a.active {
+							    color: $logo-red;
+								transition: .7s;
+							}
+
+
+	.kyhni_butn	{
+	}
+
+	.kyhni_butn a{
+		@extend .bar-buttons;
+		padding-top: 0px;
+		color: black;
+		width: 140px;
+		transition: .5s;
+
+	}
+		.kyhni_butn a span{
+			color: black;
+		font-size: 0px;
+		transition: .5s;
+		}
+
+	.kyhni_butn a:hover{
+		@extend .bar-buttons-hover;
+		padding: 0px;
+		padding-top: 0px;
+		transition: .5s;
+		
+
+	}
+	.kyhni_butn a.active {
+		@extend .bar-buttons-active;
+		padding: 0px;
+		padding-top: 0px;
+		transition: .5s;
+		
+
+	}
+		.nobili_logo_bar {
+
+			
+
+		}
+
+			.kyhni_butn a .nobili_logo_bar {
+					position: relative;
+					top: -13px;
+				opacity: 1;
+				width: 120px;
+				height: 20px;
+				transition: .5s;
+			}
+
+
+			.kyhni_butn a:hover .nobili_logo_bar {
+				position: relative;
+				top: -3px;
+			opacity: 1;
+			width: 100px;
+			height: 20px;
+			transition: .5s;
+
+			}
+
+			.kyhni_butn a.active .nobili_logo_bar {
+				position: relative;
+				top: -3px;
+			opacity: 1;
+			width: 100px;
+			height: 20px;
+			transition: .5s;
+
+			}
+
+			.kyhni_butn a span {
+				
+				opacity: 0;
+				font-size: 7px;
+				transition: .5s;
+				
+
+			}
+
+			.kyhni_butn a:hover span {
+				opacity: 1;
+			font-size: 15px;
+			transition: .5s;
+			
+			}
+
+			.kyhni_butn a.active span {
+				opacity: 1;
+			font-size: 15px;
+			
+			transition: .5s;
+			}
+
+
+
+
+
+
+					.mebli_butn{
+						
+					}
+
+					.mebli_butn a{
+						@extend .bar-buttons;
+						width: 130px;
+					}
+
+					.mebli_butn a:hover{
+						@extend .bar-buttons-hover;
+						font-size: 18px;
+
+					}
+					.mebli_butn a.active {
+						@extend .bar-buttons-active;
+						font-size: 18px;
+					}
+
+		.portfolio_butn{
+			
+		}
+		.portfolio_butn a{
+			@extend .bar-buttons;
+			width: 170px;
+
+		}
+
+		.portfolio_butn a:hover{
+			@extend .bar-buttons-hover;
+			font-size: 18px;
+
+		}
+		.portfolio_butn a.active {
+			@extend .bar-buttons-active;
+			font-size: 18px;
+		}
+
+
+				.salon_butn{
+					
+				}
+				.salon_butn a{
+					@extend .bar-buttons;	
+				}
+
+				.salon_butn a:hover{
+					@extend .bar-buttons-hover;
+					font-size: 18px;
+
+				}
+				.salon_butn a.active {
+					@extend .bar-buttons-active;
+					font-size: 18px;
+				}
+
+
+
+
+
+
+
+
+
+	.i_logo {
+			width: 300px;
+			height: 100%;
+		transition: 0.7s all;
+	
+	}
+
+	.i_logo a {
+		display: block;
+			width: 300px;
+			height: 60px;
+				border-bottom: 0px solid #f20a0f;
+				border-top: 0px solid #f20a0f;
+		transition: 0.7s all;
+	}
+
+			.i_logo a:hover {
+				border-bottom: 5px solid #f20a0f;
+				border-top: 5px solid #f20a0f;
+				border-radius: 1px;
+				background: white;
+				transition: 0.7s all;
+			}	
+
+			.i_logo a:hover .imperia_logo{
+				height: 50px;
+				transition: 0.7s all;
+			}
+				.imperia_logo {
+					width: 300px;
+					height: 60px;
+					padding: 0px 10px;
+					transition: 0.7s all;
+				}
+
+			.i_logo a.active {
+				border-bottom: 4px solid #f20a0f;
+				border-top: 4px solid #f20a0f;
+				border-radius: 1px;
+				background: white;
+				transition: 0.7s all;
+			}	
+
+				.i_logo a.active .imperia_logo{
+				height: 52px;
+				transition: 0.7s all;
+			}
+
+
+
+/*
+.i_barright:hover {
+	width: 500px;
+	background-color: rgba(56, 56, 56, 0.76);
+}
+.i_barright:hover .i_logo{
+	width: 500px;
+	right: 60px;
+	left: 0px; 
+	transition: 0.5s;
+}
+
+*/
+
+	/* button x */
+	.i_mini_bar {
+	
+	}
+		.i_mini_bar :hover {
+			background-color: white;
+			transition: 0.7s;
+
+		}
+
+
+		
+
+	#nav-toggle {
+		position: relative; 
+		display: inline-block; 
+		width:60px; 
+		height:60px;
+				background-color: none;
+				border-left: 0px solid #f20a0f;
+				border-right: 0px solid #f20a0f;
+				transition: 0.7s;
+		
+	}
+
+
+
+
+
+
+	#nav-toggle span { 
+		position: absolute; 
+		top: 17px;
+	    margin: 10px 5px;
+
+
+	}
+
+	#nav-toggle span, 
+	#nav-toggle span:before,
+	#nav-toggle span:after {
+	  position: absolute;
+	  display: block;
+	  content: '';
+	    height: 7px;
+	    width: 50px;
+	  background: #f20a0f;
+	  border-radius: 1px;
+	  cursor: pointer;
+	}
+	#nav-toggle span:before {
+	  top: -14px;
+	}
+	#nav-toggle span:after {
+	  bottom: -14px; 
+	}
+
+	/* Добавим анимацию всех свойств для блоков нашей иконки */
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	  transition: all 500ms ease-in-out;
+	}
+
+
+
+
+	/* активное состояние, т.е. меню открыто */
+
+	#nav-toggle:hover {
+	  background-color: white;
+	    	  	border-left: 4px solid #f20a0f;
+				border-right: 4px solid #f20a0f;
+				width: 68px;
+				transition: 0.7s;
+
+	}
+
+
+	#nav-toggle.active {
+	  background-color: white;
+	    	  	border-left: 4px solid #f20a0f;
+				border-right: 4px solid #f20a0f;
+				width: 68px;
+
+	}
+
+	#nav-toggle.active span {
+	  -webkit-transform: rotate(90deg);
+	 -ms-transform: rotate(90deg);
+	 transform: rotate(90deg);
+
+	}
+
+	#nav-toggle.active span::before,
+	#nav-toggle.active span::after {
+	  width: 50%;
+	}
+
+	#nav-toggle.active span::before {
+	  top: 0;
+	  -webkit-transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	 -ms-transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	 transform: translateX(30px) translateY(-6.5px) rotate(45deg);
+	}
+
+	#nav-toggle.active span::after {
+	  bottom: 0;
+	  -webkit-transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	 -ms-transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	 transform: translateX(30px) translateY(6.5px) rotate(-45deg);
+	}
+
+
+	#nav-toggle .mini_bar_togl {
+		display: none;
+
+	}
+	#nav-toggle.active .mini_bar_togl {
+		display: block;
+			position: relative;
+			top: 59px;
+			left: -136px;
+		width: 200px;
+		height: 287px;
+		background: #fff;	
+			border-left: 4px solid #f20a0f;
+			border-right: 4px solid #f20a0f;
+	}
+
+	.mini_bar_togl div {
+		width: 100%;
+		height: 60px;
+		 
+	}
+
+	.m_b_nobilia {
+		padding: 10px;
+		padding-top: 20px;
+	}
+
+	.m_b_nobilia:hover {
+		padding: 5px;
+		padding-top: 15px;
+		border-bottom: 2px solid #f20a0f;
+	}
+	.nobili_logo_mini_bar {
+		width: 100%;
+	}
+
+
+
+						.m_b_butt {
+						   	text-decoration: none;
+						   		display: block;
+						   			margin: 0px auto;
+						  		width: 100%;
+						  		text-align: center;
+						  		color: black;
+						  			font-size: 20px;
+						  			
+				       }
+
+				       .m_b_butt_hover {
+						   	text-decoration: none;
+						  		width: 100%;
+						  		text-align: center;
+						  		color: #f20a0f;
+						  			font-size: 30px;
+						  	border-top: 2px solid #f20a0f;
+						  	border-bottom: 2px solid #f20a0f;
+
+						  			
+				       }
+
+
+	#m_b_mebl {
+		margin-top: 10px;
+	}
+  .m_b_mebli a{
+  	@extend .m_b_butt;
+  }
+  		  .m_b_mebli a:hover{
+		  	@extend .m_b_butt_hover;
+		  }
+  .m_b_portfolio a{
+  	@extend .m_b_butt;
+  }	
+  		  .m_b_portfolio a:hover{
+		  	@extend .m_b_butt_hover;
+		  	font-size: 25px;
+		  }
+  .m_b_salon a{
+  	@extend .m_b_butt;
+
+  }	
+		   .m_b_salon a:hover{
+		  	@extend .m_b_butt_hover;
+
+		  }
+
+
+
+	#m_b_disconts{
+		height: 35px;
+	}
+
+
+
+
+  .m_b_discont a {
+  		@extend .m_b_butt;
+  }
+  		 .m_b_discont a:hover {
+  		@extend .m_b_butt_hover;
+  		font-size: 23px;
+  }
+
+ 

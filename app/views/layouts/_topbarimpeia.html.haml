@@ -1,0 +1,40 @@
+
+%div.top_bar_imperia
+
+  %div.kyhni_butn
+    = link_to kitchens_path, :class => kitchens_class?(kitchens_path) do
+      %span Кухни
+      \#{image_tag( 'nobilia/nobilia_logo2.svg', :class => 'nobili_logo_bar', :title => "ГЛАВНАЯ" )}
+  %div.mebli_butn
+    = link_to "мебель", furniturs_path, :class => furniturs_class?(furniturs_path)
+  %div.portfolio_butn
+    = link_to "Портфолио", portfolios_path, :class => portfolios_class?(portfolios_path)
+  %div.salon_butn
+    = link_to "САЛОН", new_contact_path, :class => contacts_class?(new_contact_path)
+    
+  %div
+
+  %div.i_logo
+    = link_to image_tag( 'imperia_logo.svg', :class => 'imperia_logo', :title => "ГЛАВНАЯ" ), home_main_path, :class => main_class?(home_main_path)
+  %div.i_mini_bar
+    %div#nav-toggle
+      %span
+      %div.mini_bar_togl
+        %div
+          .m_b_nobilia
+            = link_to kitchens_path, :class => kitchens_class?(kitchens_path) do
+              = image_tag( 'nobilia/nobilia_logo2.svg', :class => 'nobili_logo_mini_bar', :title => "ГЛАВНАЯ" )
+        %div{:id => "m_b_mebl"}
+          .m_b_mebli
+            = link_to "МЕБЕЛЬ", furniturs_path, :class => "m_b_butt"
+        %div
+          .m_b_portfolio
+            = link_to "ПОРТФОЛИО", portfolios_path, :class => "m_b_butt"
+        %div
+          .m_b_salon
+            = link_to "САЛОН", new_contact_path, :class => "m_b_butt"
+        %div{:id => "m_b_disconts"}
+          .m_b_discont{:id => "m_b_disconts"}
+            = link_to "ПРЕДЖОЛЕНИЕ", discounts_path, :class => "m_b_butt"
+
+  %div
