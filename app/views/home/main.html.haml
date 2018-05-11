@@ -43,57 +43,56 @@
 
     %div.secondmain{:style => ""}
       %div.maincoloms
-        .comteiner-fluid
-          .row
-            .col-md-3
-              .tehno_3d
-                .rotate_tehno
-                  .tehno_img_rotate_k 
-                    %h3 Качество
-                    = image_tag( 'kach.gif', :class => 'mainbodyfoto' )
-                  .tehno_text_rotate_k
-                    %h3 Качество
-                    %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
-                    .navbut_portfolio
-                      = link_to "Подробнее", kitchens_path
-            .col-md-3
-              .tehno_3d
-                .rotate_tehno
-                  .tehno_img_rotate_k 
-                    %h3 Технологии
-                    = image_tag( 'teh1.gif', :class => 'mainbodyfoto' )
-                  .tehno_text_rotate_k
-                    %h3 Технологии
-                    %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
-                    .navbut_portfolio
-                      = link_to "Подробнее", kitchens_path
-            .col-md-3
-              .tehno_3d
-                .rotate_tehno
-                  .tehno_img_rotate_k 
-                    %h3 Конструктор
-                    .mainbodyfoto
-                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%", "data-arrows" => "false"}
-                        = image_tag( 'kons1.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kons2.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'kons3.jpg', :class => 'mainbodyfoto' )
-                  .tehno_text_rotate_k
-                    %h3 Конструктор
-                    %p Nobilia предлагает широкий ассортимент внутренних и рейлинговых систем хранения, встраиваемого освещения. Для комплектации выдвижных ящиков также предлагаются системы хранения «Pantry-Box», электрическая мультирезка, выдвижные корзины для чистящих средств, мусорные системы и т.д.
-            .col-md-3
-              .tehno_3d
-                .rotate_tehno
-                  .tehno_img_rotate_k 
-                    %h3 Экология
-                    .mainbodyfoto
-                      .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%",  "data-arrows" => "false"}
-                        = image_tag( 'prefcerf.png', :class => 'mainbodyfoto' )
-                        = image_tag( 'angelcerf.png', :class => 'mainbodyfoto' )
-                        = image_tag( 'goldenes_m_serf.jpg', :class => 'mainbodyfoto' )
-                        = image_tag( 'gs_certification.jpg', :class => 'mainbodyfoto' )
-                  .tehno_text_rotate_k
-                    %h3 Экология
-                    %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC, а так же сертификаты Golden M, знак GS, DER BLAUE ENGEL. 
+        .maincolomsgrid  
+          %div
+            .tehno_3d
+              .rotate_tehno
+                .tehno_img_rotate_k 
+                  %h3 Качество
+                  = image_tag( 'kach.gif', :class => 'mainbodyfoto' )
+                .tehno_text_rotate_k
+                  %h3 Качество
+                  %p Немецкие фабрики — это современные дорогостоящие технологии и высокая степень автоматизации производства, недостижимая для небольших предприятий. Только так получается мебель, отвечающая требованиям премиум-сегмента.
+                  .navbut_portfolio
+                    = link_to "Подробнее", kitchens_path
+          %div
+            .tehno_3d
+              .rotate_tehno
+                .tehno_img_rotate_k 
+                  %h3 Технологии
+                  = image_tag( 'teh1.gif', :class => 'mainbodyfoto' )
+                .tehno_text_rotate_k
+                  %h3 Технологии
+                  %p В наших кухнях продумана каждая деталь: от аккуратной лазерной кромки до невидимой глазу фурнитуры. Внедрены современные кухонные системы: доводчики, электрические подъемные механизмы, открывающие сенсорные панели.
+                  .navbut_portfolio
+                    = link_to "Подробнее", kitchens_path
+          %div
+            .tehno_3d
+              .rotate_tehno
+                .tehno_img_rotate_k 
+                  %h3 Конструктор
+                  .mainbodyfoto
+                    .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%", "data-arrows" => "false"}
+                      = image_tag( 'kons1.jpg', :class => 'mainbodyfoto' )
+                      = image_tag( 'kons2.jpg', :class => 'mainbodyfoto' )
+                      = image_tag( 'kons3.jpg', :class => 'mainbodyfoto' )
+                .tehno_text_rotate_k
+                  %h3 Конструктор
+                  %p Nobilia предлагает широкий ассортимент внутренних и рейлинговых систем хранения, встраиваемого освещения. Для комплектации выдвижных ящиков также предлагаются системы хранения «Pantry-Box», электрическая мультирезка, выдвижные корзины для чистящих средств, мусорные системы и т.д.
+          %div
+            .tehno_3d
+              .rotate_tehno
+                .tehno_img_rotate_k 
+                  %h3 Экология
+                  .mainbodyfoto
+                    .fotorama{"data-nav" => "false", "data-transition" => "lide","data-arrows" => "true", "data-click" => "true", "data-autoplay"  => "1000", "data-loop" =>"true", "data-stopautoplayontouch" => "true","data-ratio" => "1/1", "data-width" => "100%",  "data-arrows" => "false"}
+                      = image_tag( 'prefcerf.png', :class => 'mainbodyfoto' )
+                      = image_tag( 'angelcerf.png', :class => 'mainbodyfoto' )
+                      = image_tag( 'goldenes_m_serf.jpg', :class => 'mainbodyfoto' )
+                      = image_tag( 'gs_certification.jpg', :class => 'mainbodyfoto' )
+                .tehno_text_rotate_k
+                  %h3 Экология
+                  %p Кухни из Германии выпускаются по «зеленым» технологиям. Производство не выделяет вредных веществ в атмосферу, отходы утилизируются, а древесина добывается из контролируемых лесонасаждений и имеет сертификат PEFC, а так же сертификаты Golden M, знак GS, DER BLAUE ENGEL. 
 
 
 .mainpage_kyhni_accardion

@@ -14,9 +14,9 @@
     
   %div
 
-  %div.i_logo
+  %div.i_logo{:style => "justify-self: center;"}
     = link_to image_tag( 'imperia_logo.svg', :class => 'imperia_logo', :title => "ГЛАВНАЯ" ), home_main_path, :class => main_class?(home_main_path)
-  %div.i_mini_bar
+  %div.i_mini_bar{:style => "justify-self: end;"}
     %div#nav-toggle
       %span
       %div.mini_bar_togl
