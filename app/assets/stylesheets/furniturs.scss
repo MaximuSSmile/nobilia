@@ -649,6 +649,7 @@
 	
 		.musterring_loz_logo_name{
 			height: auto;
+			text-align: center;
 		}
 
 			.musterring_loz_logo_name h2{
@@ -675,7 +676,7 @@
       		}
       			.musterring_loz_logo_block1 img{
       				width: 100%;
-      				padding: 15%;
+      				padding: 2%;
       				
       			}
 
@@ -711,8 +712,44 @@
 
 
 		.musterring_loz_logo_button {
+				/* @extend .let_it_snow_white_red ; */
+				background: #ffffff;
+				width: 84%;
+    			margin: 0px auto;
+			}
 
-		}
+			.musterring_loz_logo_button h2{
+				margin: 0px;
+				text-align: center;
+				padding: 20px 20px 10px;
+			}
+				.musterring_loz_logo_button h2 a{
+					display: block;
+					background: #ffffff;
+					width: 100%;
+					
+					margin: 0 auto;
+
+
+
+					color: black;
+					font-size: 18px;
+						text-decoration: underline overline #f20a0f;
+
+
+					transition: .5s;
+
+				}
+
+				.musterring_loz_logo_button h2 a:hover{
+
+					font-size: 22px;
+
+					text-decoration: underline overline #f20a0f;
+
+
+					transition: 1s all;
+				}
 
 /*   ###############   MUSTERRING END  ############## */ 
 
