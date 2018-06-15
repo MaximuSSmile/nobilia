@@ -75,7 +75,9 @@
   %div.video_show
     .video_heigth
 
-      %iframe{ :class => "video_setings", :allow => "encrypted-media", :allowfullscreen => "", :frameborder => "0", :gesture => "media", :src => "https://www.youtube.com/embed/d1clzpfxL68?rel=0&showinfo=0"}
+      /%iframe{ :class => "video_setings", :allow => "encrypted-media", :allowfullscreen => "", :frameborder => "0", :gesture => "media", :src => "https://www.youtube.com/embed/d1clzpfxL68?rel=0&showinfo=0"}
+
+      %iframe{:class => "video_setings",:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/7w8_mB73zxM?rel=0&showinfo=0"}
 
 /    %h3{:style => "color: #f20a0f"}= link_to "Обратите внимание на наше предложение -70%!!!", discounts_path, :style => "color: #f20a0f; text-decoration: none;"
 /%div.contacts_welcome
