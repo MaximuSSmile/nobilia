@@ -5,7 +5,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+
+gem 'rails', '>= 4.2.6.rc2', '< 5.2.1'  
+	# to update version (was  gem 'rails', '4.2.6' ) #  => bundle install # = >bundle update rails
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
